@@ -1,0 +1,60 @@
+name: Daily edition
+
+on:
+  schedule:
+    # 10:17 UTC = 5:17 a.m. Eastern (6:17 during daylight saving time)
+    - cron: "17 10 * * *"
+  workflow_dispatch: {}        # lets you run it by hand from the Actions tab
+  push:
+    branches: [main]
+    paths: ["site/**"]         # redeploy when you edit the game page
+
+permissions:
+  contents: write              # to commit the new edition
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build today's edition
+        if: github.event_name != 'push'
+        env:
+          NEWSDATA_API_KEY: ${{ secrets.NEWSDATA_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/build-edition.mjs
+
+      - name: Save the edition to the repo
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "daily-edition-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/edition.json site/editions
+          git diff --cached --quiet || git commit -m "Edition for $(TZ=America/New_York date +%F)"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
