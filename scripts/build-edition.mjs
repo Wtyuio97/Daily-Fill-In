@@ -406,6 +406,26 @@ function borrowDecoys(item, pool) {
   return out.length === 3 ? out : null;
 }
 
+/* ---------- 6. Keep the leaderboard awake ---------- */
+// Supabase pauses free projects after a week without database activity. A quiet week
+// would take the leaderboard offline, so the daily build makes one small read.
+async function pingLeaderboard(editionKey) {
+  try {
+    const cfg = await readFile(path.join(ROOT, "site", "config.js"), "utf8");
+    const url = ((cfg.match(/url:\s*"([^"]*)"/) || [])[1] || "").trim().replace(/\/+$/, "");
+    const apikey = ((cfg.match(/key:\s*"([^"]*)"/) || [])[1] || "").trim();
+    if (!url || !apikey) return; // leaderboard not set up
+    const res = await fetch(`${url}/rest/v1/rpc/get_leaderboard`, {
+      method: "POST",
+      headers: { apikey, Authorization: `Bearer ${apikey}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ p_edition: editionKey, p_limit: 1 }),
+    });
+    console.log(`Leaderboard check: HTTP ${res.status}${res.ok ? "" : " (see README, Leaderboard)"}`);
+  } catch (err) {
+    console.warn(`Leaderboard check failed: ${err.message}`);
+  }
+}
+
 /* ---------- 5. Build ---------- */
 async function main() {
   const now = argValue("--date") ? new Date(argValue("--date") + "T12:00:00Z") : new Date();
@@ -482,6 +502,7 @@ async function main() {
     await writeFile(path.join(ROOT, "site", "edition.json"), json);
     await writeFile(path.join(ROOT, "site", "editions", `${key}.json`), json);
     console.log(`Wrote site/edition.json and site/editions/${key}.json`);
+    await pingLeaderboard(key);
   }
   console.log(`Edition No. ${edition.number} (${key}), news from ${edition.newsKey || "the last two days"}: ${final.length} headlines, ${usedClaude} with AI decoys, ${usedBorrowed} with borrowed decoys.`);
   for (const h of edition.headlines) console.log(`  [${h.section}] ${h.lead} / ${h.rest}  (${h.outlet})`);

@@ -126,7 +126,29 @@ a { color: var(--pencil); text-underline-offset: 3px; }
 }
 .btn:disabled { opacity: .55; cursor: default; }
 .btn:disabled:hover { background: var(--ink); color: var(--sheet); }
+/* Name field and leaderboard */
+.name-field { display: grid; gap: 6px; max-width: 380px; }
+.name-field label { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.name-field input { font-family: var(--font-display); font-size: 19px; padding: 10px 12px; border: 2px solid var(--ink); border-radius: 2px; background: var(--sheet); color: var(--ink); min-width: 0; }
+.name-field .hint { font-size: 13px; color: var(--muted); }
+.name-field .hint.error, .status-line.error { color: var(--low); }
+.board { display: grid; gap: 12px; border-top: 4px double var(--ink); padding-top: 18px; margin-top: 6px; }
+.board h3 { font-family: var(--font-display); font-weight: 800; font-size: 26px; line-height: 1.2; margin: 0; }
+.status-line { margin: 0; font-size: 15px; }
+.board-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; }
+.board-list { list-style: none; margin: 0; padding: 0; display: grid; }
+.board-list li { display: grid; grid-template-columns: 40px 1fr auto 56px; gap: 10px; align-items: baseline; padding: 9px 6px; border-top: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
+.board-list li:last-child { border-bottom: 1px solid var(--rule); }
+.board-list li.you { background: color-mix(in srgb, var(--marker) 45%, transparent); }
+.board-list li.gap { display: block; text-align: center; color: var(--muted); padding: 2px 0; }
+.board-list .b-place { font-family: var(--font-display); font-weight: 800; font-size: 18px; }
+.board-list .b-name { font-family: var(--font-display); font-size: 18px; overflow-wrap: anywhere; }
+.board-list .b-right { font-size: 13px; color: var(--muted); }
+.board-list .b-score { font-family: var(--font-display); font-weight: 800; font-size: 20px; text-align: right; }
+.link-btn { font: inherit; font-size: 14px; color: var(--muted); background: none; border: 0; padding: 4px 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; justify-self: start; }
 </style>
+<!-- Leaderboard settings live in config.js so you can edit them without touching this page. -->
+<script src="config.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -148,6 +170,7 @@ a { color: var(--pencil); text-underline-offset: 3px; }
       <li><span>Read the opening words of a real headline.</span></li>
       <li><span>Pick the ending you think actually ran. You get <strong id="secs-label">20 seconds</strong> per headline.</span></li>
       <li><span>A right answer is worth 50 points, plus up to 50 more for answering fast. A wrong pick or a missed deadline scores nothing.</span></li>
+      <li><span>You get one play per edition, so make it count. A new edition comes out every morning.</span></li>
     </ol>
     <ul class="tiers" aria-label="Ratings per headline">
       <li class="chip t-scoop">Scoop <small>right, 80+</small></li>
@@ -155,7 +178,11 @@ a { color: var(--pencil); text-underline-offset: 3px; }
       <li class="chip t-spiked">Spiked <small>wrong</small></li>
       <li class="chip t-late">Missed deadline <small>out of time</small></li>
     </ul>
-    <p id="prior" class="prior" hidden></p>
+    <div class="name-field" id="name-wrap" hidden>
+      <label for="player-name">Your name for the leaderboard</label>
+      <input id="player-name" type="text" maxlength="20" autocomplete="nickname" spellcheck="false" placeholder="Optional">
+      <span class="hint" id="name-hint">Up to 20 letters, numbers or spaces. Leave it blank to play without the leaderboard.</span>
+    </div>
     <div class="actions">
       <button id="start" class="btn primary" type="button" disabled>Loading today’s edition…</button>
     </div>
@@ -198,15 +225,30 @@ a { color: var(--pencil); text-underline-offset: 3px; }
   <!-- Results -->
   <section id="screen-results" class="story" hidden aria-labelledby="final-hed">
     <div class="kicker"><span class="section">Final edition</span><span class="outlet" id="final-date"></span></div>
+    <p id="played-note" class="prior" hidden>You’ve played this edition. Come back tomorrow morning for a new one.</p>
     <h2 id="final-hed" class="hed">Your front page is ready</h2>
     <p class="total"><span id="total" class="big">0</span><span class="of" id="max">/ 700</span></p>
     <p id="rank" class="rank"></p>
-    <ol id="recap" class="recap"></ol>
     <div class="actions">
       <button id="copy" class="btn primary" type="button">Copy results</button>
-      <button id="again" class="btn" type="button">Play again</button>
     </div>
     <textarea id="share-fallback" class="share-fallback" readonly hidden aria-label="Results to copy"></textarea>
+
+    <section id="board" class="board" hidden aria-labelledby="board-hed">
+      <h3 id="board-hed">Today’s leaderboard</h3>
+      <p id="board-status" class="status-line" aria-live="polite"></p>
+      <form id="board-form" class="board-form" hidden novalidate>
+        <div class="name-field">
+          <label for="board-name">Your name</label>
+          <input id="board-name" type="text" maxlength="20" autocomplete="nickname" spellcheck="false">
+        </div>
+        <button class="btn primary" type="submit" id="board-submit">Post my score</button>
+      </form>
+      <ol id="board-list" class="board-list"></ol>
+      <button type="button" class="link-btn" id="board-refresh" hidden>Refresh the leaderboard</button>
+    </section>
+
+    <ol id="recap" class="recap" aria-label="Your answers"></ol>
     <!-- AD SLOT (results screen): paste an ad unit here. -->
     <p class="foot"><span id="decoy-note">The wrong endings were written for this game and never ran anywhere.</span> Real headlines are quoted from the outlets linked above. Headlines via <a href="https://newsdata.io" target="_blank" rel="noopener">NewsData.io</a>.</p>
   </section>
@@ -318,6 +360,37 @@ const FALLBACK_EDITION = {
 };
 let EDITION = FALLBACK_EDITION;
 
+/* Leaderboard connection, from config.js. Empty = no leaderboard (the game still works). */
+const LB = (() => {
+  const c = window.LEADERBOARD_CONFIG || {};
+  const url = String(c.url || "").trim().replace(/\/+$/, "");
+  const key = String(c.key || "").trim();
+  return url && key ? { url, key } : null;
+})();
+
+/* ===== Saved state (this browser only) ===== */
+const store = {
+  get(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+};
+function playerId() {
+  let id = store.get("dfi-player");
+  if (!id) {
+    id = (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
+      : "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, ch => {
+          const r = Math.random() * 16 | 0;
+          return (ch === "x" ? r : (r & 3 | 8)).toString(16);
+        });
+    store.set("dfi-player", id);
+  }
+  return id;
+}
+const NAME_RE = /^[A-Za-z0-9 ._'-]{1,20}$/;
+const cleanName = s => String(s || "").replace(/\s+/g, " ").trim();
+const playKey = () => "daily-fill-in-play-" + EDITION.key;
+let play = null; // { results: [...], finished: bool, posted: bool }
+function savePlay() { if (play) store.set(playKey(), play); }
+
 /* ===== Scoring ===== */
 function maxScore() { return EDITION.headlines.length * 100; }
 function pointsFor(correct, leftMs) {
@@ -355,8 +428,9 @@ const DECOY_NOTES = {
 const $ = id => document.getElementById(id);
 const screens = { start: $("screen-start"), round: $("screen-round"), results: $("screen-results") };
 const KEYS = ["A", "B", "C", "D"];
-let round = 0, results = [], deadline = 0, ticker = null, answered = true, choices = [];
-const storeKey = () => "daily-fill-in-mc-" + EDITION.key;
+let round = 0, deadline = 0, ticker = null, answered = true, choices = [];
+const total = () => play.results.reduce((a, r) => a + r.pts, 0);
+const rightCount = () => play.results.filter(r => r.correct).length;
 
 function show(name) {
   Object.entries(screens).forEach(([k, el]) => { el.hidden = k !== name; });
@@ -377,10 +451,22 @@ function renderHed(el, h, state) {
     el.append(s);
   }
 }
-function total() { return results.reduce((a, r) => a + r.pts, 0); }
 
 function startGame() {
-  round = 0; results = [];
+  if (store.get(playKey())) return; // already played this edition in this browser
+  if (LB) {
+    const name = cleanName($("player-name").value);
+    if (name && !NAME_RE.test(name)) {
+      $("name-hint").textContent = "Use only letters, numbers, spaces and . _ ' - (up to 20 characters).";
+      $("name-hint").classList.add("error");
+      $("player-name").focus();
+      return;
+    }
+    store.set("dfi-name", name || null);
+  }
+  play = { results: [], finished: false, posted: false };
+  savePlay();
+  round = 0;
   show("round");
   startRound();
 }
@@ -434,7 +520,8 @@ function answer(index) {
   const correct = !timedOut && choices[index].real;
   const pts = pointsFor(correct, left);
   const r = { pts, correct, timedOut, picked: timedOut ? null : choices[index].text };
-  results.push(r);
+  play.results.push(r);
+  savePlay(); // saved after every answer, so reloading can't restart the game
 
   [...$("options").children].forEach((btn, i) => {
     btn.disabled = true;
@@ -467,10 +554,13 @@ function answer(index) {
 function next() {
   round++;
   if (round < EDITION.headlines.length) startRound();
-  else finish();
+  else finish(false);
 }
-function finish() {
+function finish(revisit) {
+  play.finished = true;
+  savePlay();
   const sum = total();
+  $("played-note").hidden = !revisit;
   $("total").textContent = sum;
   $("max").textContent = "/ " + maxScore();
   $("final-date").textContent = EDITION.dateLabel;
@@ -478,13 +568,12 @@ function finish() {
   const strong = document.createElement("strong");
   strong.textContent = rankOf(sum);
   $("rank").append("Your masthead title: ", strong);
-  const right = results.filter(r => r.correct).length;
-  $("final-hed").textContent = `${right} of ${EDITION.headlines.length} real endings spotted`;
+  $("final-hed").textContent = `${rightCount()} of ${EDITION.headlines.length} real endings spotted`;
 
   const list = $("recap");
   list.textContent = "";
   EDITION.headlines.forEach((h, i) => {
-    const r = results[i];
+    const r = play.results[i] || { pts: 0, correct: false, timedOut: true, picked: null };
     const li = document.createElement("li");
     const hed = document.createElement("div");
     hed.className = "r-hed";
@@ -512,13 +601,12 @@ function finish() {
   });
   $("share-fallback").hidden = true;
   $("copy").textContent = "Copy results";
-  try { localStorage.setItem(storeKey(), JSON.stringify({ total: sum, right })); } catch (e) {}
   show("results");
+  if (LB) startLeaderboard();
 }
 function shareText() {
   const sum = total();
-  const right = results.filter(r => r.correct).length;
-  return `The Daily Fill-In No. ${EDITION.number} · ${EDITION.shortDate}\n${sum}/${maxScore()} · ${right}/${EDITION.headlines.length} · ${rankOf(sum)}\n${results.map(r => tierOf(r).sq).join("")}`;
+  return `The Daily Fill-In No. ${EDITION.number} · ${EDITION.shortDate}\n${sum}/${maxScore()} · ${rightCount()}/${EDITION.headlines.length} · ${rankOf(sum)}\n${play.results.map(r => tierOf(r).sq).join("")}`;
 }
 async function copyResults() {
   const text = shareText();
@@ -533,22 +621,107 @@ async function copyResults() {
     $("copy").textContent = "Select and copy below";
   }
 }
-function showPrior() {
-  let saved = null;
-  try { saved = JSON.parse(localStorage.getItem(storeKey()) || "null"); } catch (e) {}
-  const el = $("prior");
-  if (saved && typeof saved.total === "number") {
-    el.textContent = "";
-    const s = document.createElement("strong");
-    s.textContent = `${saved.total}/${maxScore()}`;
-    el.append("You already played this edition and scored ", s, ". You can play it again.");
-    el.hidden = false;
-    $("start").textContent = "Play this edition again";
-  } else {
-    el.hidden = true;
-    $("start").textContent = "Start today’s edition";
+
+/* ===== Leaderboard (Supabase) ===== */
+async function rpc(fn, body) {
+  const res = await fetch(`${LB.url}/rest/v1/rpc/${fn}`, {
+    method: "POST",
+    headers: { apikey: LB.key, Authorization: `Bearer ${LB.key}`, "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) throw new Error(`Leaderboard error ${res.status}`);
+  return res.json();
+}
+function boardStatus(text, isError) {
+  $("board-status").textContent = text;
+  $("board-status").classList.toggle("error", !!isError);
+}
+function showNameForm(prefill) {
+  $("board-form").hidden = false;
+  $("board-name").value = prefill || "";
+}
+async function startLeaderboard() {
+  $("board").hidden = false;
+  $("board-refresh").hidden = false;
+  if (!play.posted) {
+    const name = store.get("dfi-name");
+    if (name) { await postScore(name); return; }
+    boardStatus("Add your name to put your score on today’s board.");
+    showNameForm("");
+  }
+  await loadBoard();
+}
+const POST_ERRORS = {
+  name_taken: n => `“${n}” is already on today’s board. Try a different name.`,
+  bad_name: () => "Use only letters, numbers, spaces and . _ ' - (up to 20 characters).",
+  closed_edition: () => "This edition’s leaderboard has closed. Refresh the page to play today’s edition.",
+};
+async function postScore(rawName) {
+  const name = cleanName(rawName);
+  if (!NAME_RE.test(name)) { boardStatus(POST_ERRORS.bad_name(), true); showNameForm(name); return; }
+  $("board-submit").disabled = true;
+  boardStatus("Posting your score…");
+  try {
+    const r = await rpc("submit_score", {
+      p_edition: EDITION.key, p_player: playerId(), p_name: name,
+      p_score: total(), p_correct: rightCount(), p_total: EDITION.headlines.length,
+    });
+    if (r && (r.ok || r.error === "already_played")) {
+      play.posted = true;
+      savePlay();
+      store.set("dfi-name", name);
+      $("board-form").hidden = true;
+      await loadBoard();
+    } else {
+      const err = r && r.error;
+      boardStatus((POST_ERRORS[err] || (() => "Your score couldn’t be posted."))(name), true);
+      if (err === "name_taken" || err === "bad_name") showNameForm(name);
+      else $("board-form").hidden = true;
+      await loadBoard(true);
+    }
+  } catch (e) {
+    boardStatus("Couldn’t reach the leaderboard. Check your connection and try again.", true);
+    showNameForm(name);
+  } finally {
+    $("board-submit").disabled = false;
   }
 }
+async function loadBoard(keepStatus) {
+  let rows;
+  try {
+    rows = await rpc("get_leaderboard", { p_edition: EDITION.key, p_player: playerId(), p_limit: 10 });
+  } catch (e) {
+    if (!keepStatus) boardStatus("Couldn’t load the leaderboard right now.", true);
+    return;
+  }
+  const list = $("board-list");
+  list.textContent = "";
+  rows.forEach((r, i) => {
+    if (i > 0 && r.is_you && i >= 10) {
+      const gap = document.createElement("li");
+      gap.className = "gap";
+      gap.setAttribute("aria-hidden", "true");
+      gap.textContent = "⋯";
+      list.append(gap);
+    }
+    const li = document.createElement("li");
+    if (r.is_you) li.className = "you";
+    const place = document.createElement("span"); place.className = "b-place"; place.textContent = r.place;
+    const nm = document.createElement("span"); nm.className = "b-name"; nm.textContent = r.name + (r.is_you ? " (you)" : "");
+    const right = document.createElement("span"); right.className = "b-right"; right.textContent = `${r.correct}/${r.total}`;
+    const sc = document.createElement("span"); sc.className = "b-score"; sc.textContent = r.score;
+    li.append(place, nm, right, sc);
+    list.append(li);
+  });
+  if (keepStatus) return;
+  const me = rows.find(r => r.is_you);
+  const players = rows.length ? rows[0].players : 0;
+  if (me) boardStatus(`You’re #${me.place} of ${players} player${players === 1 ? "" : "s"} today.`);
+  else if (!play.posted && !$("board-form").hidden) { /* keep the "add your name" prompt */ }
+  else boardStatus(players ? `${players} player${players === 1 ? "" : "s"} so far today.` : "No scores yet today.");
+}
+
+/* ===== Loading ===== */
 function applyEdition() {
   const n = EDITION.headlines.length;
   $("ed-no").textContent = "No. " + EDITION.number;
@@ -560,11 +733,21 @@ function applyEdition() {
   if (EDITION.newsDateLabel) {
     $("start-hed").textContent = "Real headlines from yesterday’s news. Can you spot how they end?";
     $("news-day").textContent = `Every headline ran on ${EDITION.newsDateLabel}. `;
-  } else {
-    $("start-hed").textContent = "Real headlines from the news. Can you spot how they end?";
-    $("news-day").textContent = "";
   }
-  showPrior();
+
+  // Already played this edition in this browser? Show the results instead of a new game.
+  const saved = store.get(playKey());
+  if (saved && Array.isArray(saved.results)) {
+    play = { results: saved.results.slice(0, n), finished: true, posted: !!saved.posted };
+    while (play.results.length < n) play.results.push({ pts: 0, correct: false, timedOut: true, picked: null });
+    finish(true);
+    return;
+  }
+  if (LB) {
+    $("name-wrap").hidden = false;
+    $("player-name").value = store.get("dfi-name") || "";
+  }
+  $("start").textContent = "Start today’s edition";
   $("start").disabled = false;
 }
 function isValidEdition(e) {
@@ -592,9 +775,11 @@ document.addEventListener("keydown", e => {
   if (i >= 0 && i < choices.length) { e.preventDefault(); answer(i); }
 });
 $("start").addEventListener("click", startGame);
+$("player-name").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); startGame(); } });
 $("next").addEventListener("click", next);
-$("again").addEventListener("click", startGame);
 $("copy").addEventListener("click", copyResults);
+$("board-form").addEventListener("submit", e => { e.preventDefault(); postScore($("board-name").value); });
+$("board-refresh").addEventListener("click", () => loadBoard());
 loadEdition();
 </script>
 </body>

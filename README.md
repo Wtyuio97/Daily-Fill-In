@@ -4,9 +4,11 @@ A daily news game. Players see the start of a real headline and pick the real en
 
 ```
 site/index.html            the game (one page, no build step)
+site/config.js             leaderboard settings (your Supabase address and public key)
 site/edition.json          today's edition, read by the game
 site/editions/             an archive copy of every edition
 scripts/build-edition.mjs  fetches headlines and builds edition.json
+supabase/leaderboard.sql   one-time database setup for the leaderboard
 .github/workflows/         runs the build every morning and publishes the site
 ```
 
@@ -49,6 +51,39 @@ Never paste keys into the code. Secrets keep them private.
 
 ### 6. Run it once by hand
 **Actions → Daily edition → Run workflow.** When it finishes (about a minute), your site is live at the address shown on the Pages settings screen, usually `https://YOUR-USERNAME.github.io/REPO-NAME/`. After that it runs on its own every morning.
+
+## One play per day
+
+Each browser gets one play per edition. Progress is saved after every answer, so refreshing the page mid-game doesn't restart it: the questions not yet answered count as missed. Coming back later shows that day's results and the leaderboard instead of a new game.
+
+The lock lives in the player's browser. Someone determined could get another try by switching browsers or clearing their site data, but they'd need a new leaderboard name to post again.
+
+## Leaderboard
+
+Scores are saved in a free Supabase database. Until you set it up, the game works without a leaderboard.
+
+### 1. Create the database (about 10 minutes)
+1. Sign up at https://supabase.com and click **New project**. Pick any name, create a database password (save it somewhere), and choose a region near your players, such as East US.
+2. When the project is ready, open **SQL Editor**, start a new query, paste in the whole of `supabase/leaderboard.sql`, and click **Run**. It should say "Success. No rows returned."
+
+### 2. Connect the site
+1. In Supabase, open **Project Settings** and find two values:
+   - the **Project URL**, which looks like `https://abcdefghijklmnop.supabase.co`
+   - the **publishable key**, which starts with `sb_publishable_` (it's under API Keys)
+2. On GitHub, open `site/config.js`, click the pencil icon to edit, paste the two values between the quotes, and click **Commit changes**. The site updates within a minute or two.
+
+The publishable key is meant to be public. Visitors can't read or change the scores table directly. All they can do is call two functions: one posts a finished score (once per player per day, with a sensible score, under a name nobody else has used that day) and one reads the top 10.
+
+### How it plays
+- Players can type a name on the start screen (optional). Their score posts automatically at the end.
+- Players who skip the name get a prompt to add one after the game.
+- Names can be up to 20 letters, numbers or spaces, and each name can only be used once per day.
+- The results screen shows the top 10 for the day plus the player's own place.
+
+### Looking after it
+- **Removing a name:** in Supabase, open **Table Editor → scores**, find the row and delete it.
+- **Cheating:** scores are worked out in the player's browser, so a technical person could post a fake score that still looks believable. The database blocks impossible ones. That's fine for a casual daily board. If cheating becomes a problem, the checking can be moved to the server.
+- **Sleeping database:** Supabase pauses free projects after a week without activity. The daily build reads the leaderboard each morning so that doesn't happen. If it ever does pause, restore it from the Supabase dashboard.
 
 ## Ads and your own domain
 
