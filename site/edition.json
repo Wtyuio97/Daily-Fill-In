@@ -1,0 +1,102 @@
+{
+  "number": 1,
+  "key": "2026-11-15",
+  "dateLabel": "Sunday, November 15, 2026",
+  "shortDate": "Nov 15, 2026",
+  "seconds": 20,
+  "decoySource": "written",
+  "generatedAt": "2026-11-15T12:00:00.000Z",
+  "headlines": [
+    {
+      "section": "Science",
+      "outlet": "SciTechDaily",
+      "date": "Nov 14",
+      "url": "https://scitechdaily.com/",
+      "lead": "A 3-Million-Year-Old Fossil Is Turning",
+      "rest": "the Story of Human Evolution Upside Down",
+      "decoys": [
+        "Up Evidence of the Oldest Known Burial",
+        "Scientists Against Each Other Over Its Age",
+        "Our Picture of Early Diets Inside Out"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Euronews",
+      "date": "Nov 15",
+      "url": "https://www.euronews.com/video/2026/11/15/latest-news-bulletin-november-15th-2026-morning",
+      "lead": "Qatar and Turkey announce",
+      "rest": "a landmark defence alliance",
+      "decoys": [
+        "a new gas pipeline to Europe",
+        "a joint bid for the 2036 Olympics",
+        "a sweeping free trade agreement"
+      ]
+    },
+    {
+      "section": "Space",
+      "outlet": "Universe Today",
+      "date": "Nov 14",
+      "url": "https://www.universetoday.com/",
+      "lead": "Baby, She’s Back! SpaceX Catches",
+      "rest": "a Starship From Orbit for First Time",
+      "decoys": [
+        "a Lost Satellite and Brings It Home",
+        "Its Fairing Halves in Midair Again",
+        "a Dragon Capsule With a Robotic Arm"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Scientific American",
+      "date": "Nov 14",
+      "url": "https://www.scientificamerican.com/",
+      "lead": "We beat screwworm once. Here’s how",
+      "rest": "we’re trying to do it again",
+      "decoys": [
+        "it came back anyway",
+        "ranchers are fighting it this time",
+        "sterile flies saved the cattle industry"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "The Telegraph, via GoLocalProv",
+      "date": "Nov 15",
+      "url": "https://www.golocalprov.com/news/big-news-stories-overnight-sunday-november-15-2026",
+      "lead": "Putin demands Britain stop",
+      "rest": "defending Europe with nuclear weapons",
+      "decoys": [
+        "sending long-range missiles to Kyiv",
+        "training Ukrainian troops on British soil",
+        "seizing Russian oil tankers in the Channel"
+      ]
+    },
+    {
+      "section": "Space",
+      "outlet": "ScienceDaily",
+      "date": "Nov 12",
+      "url": "https://sciencedaily.com/releases/2026/11/261111005908.htm",
+      "lead": "NASA’s Perseverance confirms a key ingredient for life",
+      "rest": "hidden in ancient Mars rocks",
+      "decoys": [
+        "frozen beneath the Martian poles",
+        "in samples bound for Earth",
+        "drifting in the Martian atmosphere"
+      ]
+    },
+    {
+      "section": "Business",
+      "outlet": "CNBC",
+      "date": "Nov 14",
+      "url": "https://www.cnbc.com/technology/",
+      "lead": "Nvidia urged to consider",
+      "rest": "‘potential return of Jensen Huang’ by two major investors",
+      "decoys": [
+        "‘a clean break from its founder’ by top shareholders",
+        "an outside CEO as board probe widens, analysts say",
+        "pausing China chip sales until the probe ends"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Daily Fill-In</title>
+<meta name="description" content="A daily news game: read the start of a real headline and pick how it really ends.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,800;1,6..72,500;1,6..72,700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<!-- AD SETUP: paste your ad network's script tag (e.g. Google AdSense) here, once your site is approved. -->
+<style>
+:root {
+  /* Layout: a single newspaper column. Masthead on top; each round is set like a front-page story,
+     with four possible endings below it. Highlighter marks the real ending, editor's blue pencil marks a wrong pick. */
+  --paper: #ecebe5;
+  --sheet: #f8f7f2;
+  --ink: #171717;
+  --muted: #5f5d57;
+  --rule: #c8c5bc;
+  --pencil: #2448c8;
+  --marker: #f3dc55;
+  --good: #1d7a46;
+  --mid: #9a6400;
+  --low: #b2412e;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
+  --font-mast: "UnifrakturMaguntia", "Old English Text MT", Georgia, serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; background: var(--paper); color: var(--ink); }
+body { font-family: var(--font-body); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 640px; margin: 0 auto; padding: 20px 16px 56px; display: flex; flex-direction: column; gap: 22px; }
+
+/* Masthead */
+.mast { text-align: center; border-bottom: 4px double var(--ink); padding-bottom: 8px; }
+.mast h1 { font-family: var(--font-mast); font-weight: 400; font-size: clamp(40px, 12vw, 66px); line-height: 1.05; margin: 4px 0 10px; letter-spacing: .01em; }
+.edition { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2px 14px; border-top: 1px solid var(--ink); padding-top: 6px; font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+
+/* Shared type */
+.hed { font-family: var(--font-display); font-weight: 800; font-size: clamp(27px, 7.2vw, 40px); line-height: 1.14; letter-spacing: -0.012em; margin: 0; text-wrap: balance; }
+.dek { font-family: var(--font-display); font-size: 19px; line-height: 1.45; color: var(--muted); margin: 0; max-width: 60ch; }
+.kicker { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; }
+.kicker .section { color: var(--pencil); font-weight: 800; }
+.kicker .outlet { color: var(--muted); font-weight: 600; }
+
+/* Start screen */
+.steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; counter-reset: step; }
+.steps li { display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; counter-increment: step; max-width: 62ch; }
+.steps li::before { content: counter(step); font-family: var(--font-display); font-weight: 800; font-size: 22px; line-height: 1.1; color: var(--pencil); }
+.tiers { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 4px 9px; border: 1.5px solid currentColor; border-radius: 2px; white-space: nowrap; }
+.chip small { font-weight: 500; letter-spacing: 0; text-transform: none; font-size: 12.5px; }
+.t-scoop { color: var(--good); background: color-mix(in srgb, var(--good) 10%, transparent); }
+.t-front { color: var(--good); }
+.t-spiked { color: var(--low); }
+.t-late { color: var(--muted); }
+.prior { font-size: 15px; color: var(--muted); margin: 0; }
+.prior strong { color: var(--ink); }
+
+/* Buttons */
+.btn { font-family: var(--font-body); font-size: 16px; font-weight: 700; padding: 12px 20px; border: 2px solid var(--ink); background: transparent; color: var(--ink); border-radius: 2px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; }
+.btn.primary { background: var(--ink); color: var(--sheet); }
+.btn:hover { background: var(--ink); color: var(--sheet); }
+.btn.primary:hover { background: #000; }
+a { color: var(--pencil); text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--pencil); outline-offset: 2px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+/* Round */
+.status { display: grid; grid-template-columns: 1fr auto 1fr; align-items: baseline; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.status .clock { font-family: var(--font-display); font-size: 26px; letter-spacing: 0; text-transform: none; }
+.status .right { text-align: right; }
+.timebar { height: 5px; background: var(--rule); margin-top: 6px; }
+.timebar .fill { height: 100%; width: 100%; background: var(--ink); }
+.timebar.low .fill { background: var(--low); }
+.clock.low { color: var(--low); }
+.story { display: grid; gap: 12px; padding: 18px 0 4px; }
+.blank { display: inline-block; width: 3.2em; height: 0.95em; border-bottom: 3px solid var(--ink); vertical-align: -0.12em; }
+.w-hit { background: linear-gradient(transparent 52%, var(--marker) 52%, var(--marker) 92%, transparent 92%); }
+.w-miss { color: var(--pencil); font-style: italic; font-weight: 700; }
+
+.pick-label { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 8px; }
+.options { display: grid; gap: 10px; }
+.opt { display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: baseline; width: 100%; text-align: left; font-family: var(--font-display); font-size: 19px; font-weight: 500; line-height: 1.3; color: var(--ink); background: var(--sheet); border: 2px solid var(--ink); border-radius: 2px; padding: 12px 14px; cursor: pointer; min-height: 54px; }
+.opt .key { font-family: var(--font-body); font-size: 13px; font-weight: 800; color: var(--pencil); letter-spacing: .04em; }
+.opt:hover:not(:disabled) { border-color: var(--pencil); box-shadow: inset 0 0 0 1px var(--pencil); }
+.opt:disabled { cursor: default; }
+.opt.right { background: color-mix(in srgb, var(--marker) 55%, var(--sheet)); border-color: var(--ink); }
+.opt.right .key { color: var(--good); }
+.opt.wrong { border-color: var(--pencil); color: var(--pencil); }
+.opt.wrong .text { text-decoration: line-through; text-decoration-thickness: 2px; }
+.opt.dim { opacity: .45; }
+
+/* Reveal */
+.reveal { display: grid; gap: 14px; margin-top: 16px; }
+.verdict { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.pts { font-family: var(--font-display); font-weight: 800; font-size: 44px; line-height: 1; font-variant-numeric: tabular-nums; }
+.note { margin: 0; font-family: var(--font-display); font-size: 18px; color: var(--muted); }
+
+/* Results */
+.total { display: flex; align-items: baseline; gap: 10px; margin: 0; font-family: var(--font-display); font-variant-numeric: tabular-nums; }
+.total .big { font-size: clamp(64px, 18vw, 96px); font-weight: 800; line-height: .95; }
+.total .of { font-size: 26px; color: var(--muted); }
+.rank { margin: 0; font-size: 17px; }
+.rank strong { font-family: var(--font-display); font-size: 21px; }
+.recap { list-style: none; margin: 0; padding: 0; display: grid; }
+.recap li { display: grid; grid-template-columns: 1fr auto; gap: 6px 14px; padding: 14px 0; border-top: 1px solid var(--rule); }
+.recap li:last-child { border-bottom: 1px solid var(--rule); }
+.recap .r-hed { font-family: var(--font-display); font-weight: 600; font-size: 18px; line-height: 1.3; text-wrap: balance; }
+.recap .r-meta { grid-column: 1 / -1; font-size: 13px; color: var(--muted); }
+.recap .r-meta .picked { font-family: var(--font-display); font-style: italic; font-size: 15px; color: var(--pencil); }
+.recap .r-pts { font-family: var(--font-display); font-weight: 800; font-size: 24px; font-variant-numeric: tabular-nums; text-align: right; }
+.share-fallback { width: 100%; min-height: 96px; font: 15px/1.4 var(--font-body); padding: 10px; border: 2px solid var(--ink); background: var(--sheet); color: var(--ink); }
+.foot { font-size: 13px; color: var(--muted); margin: 0; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .stamp { animation: stamp .35s cubic-bezier(.2,.9,.3,1.2) both; }
+  @keyframes stamp { from { transform: scale(1.35); opacity: .2; } to { transform: scale(1); opacity: 1; } }
+}
+@media (max-width: 420px) {
+  .actions .btn { flex: 1 1 100%; }
+  .opt { font-size: 18px; }
+}
+.btn:disabled { opacity: .55; cursor: default; }
+.btn:disabled:hover { background: var(--ink); color: var(--sheet); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <h1>The Daily Fill-In</h1>
+    <div class="edition">
+      <span id="ed-no">No. 1</span>
+      <span id="ed-date">Sunday, November 15, 2026</span>
+      <span id="ed-count">Seven headlines</span>
+    </div>
+  </header>
+
+  <!-- Start -->
+  <section id="screen-start" class="story" aria-labelledby="start-hed">
+    <h2 id="start-hed" class="hed">Real headlines from the news. Can you spot how they end?</h2>
+    <p class="dek"><span id="news-day"></span>Each story shows how its headline starts. One of four endings is the real one. The other three are decoys.</p>
+    <ol class="steps">
+      <li><span>Read the opening words of a real headline.</span></li>
+      <li><span>Pick the ending you think actually ran. You get <strong id="secs-label">20 seconds</strong> per headline.</span></li>
+      <li><span>A right answer is worth 50 points, plus up to 50 more for answering fast. A wrong pick or a missed deadline scores nothing.</span></li>
+    </ol>
+    <ul class="tiers" aria-label="Ratings per headline">
+      <li class="chip t-scoop">Scoop <small>right, 80+</small></li>
+      <li class="chip t-front">Front page <small>right</small></li>
+      <li class="chip t-spiked">Spiked <small>wrong</small></li>
+      <li class="chip t-late">Missed deadline <small>out of time</small></li>
+    </ul>
+    <p id="prior" class="prior" hidden></p>
+    <div class="actions">
+      <button id="start" class="btn primary" type="button" disabled>Loading today’s edition…</button>
+    </div>
+    <!-- AD SLOT (start screen): paste an ad unit here. -->
+    <p class="foot">A new edition every morning. Headlines via <a href="https://newsdata.io" target="_blank" rel="noopener">NewsData.io</a>.</p>
+  </section>
+
+  <!-- Round -->
+  <section id="screen-round" hidden>
+    <div class="status">
+      <span id="round-label">Headline 1 of 7</span>
+      <span id="clock" class="clock" aria-label="Seconds left">20</span>
+      <span id="running" class="right">0 pts</span>
+    </div>
+    <div id="timebar" class="timebar" aria-hidden="true"><div id="timefill" class="fill"></div></div>
+
+    <article class="story">
+      <div class="kicker"><span id="section" class="section">Space</span><span id="outlet" class="outlet">Outlet</span></div>
+      <h2 id="hed" class="hed"></h2>
+    </article>
+
+    <div id="pick-wrap">
+      <p class="pick-label" id="pick-label">Pick the real ending</p>
+      <div id="options" class="options" role="group" aria-labelledby="pick-label"></div>
+    </div>
+
+    <div id="reveal" class="reveal" hidden aria-live="polite">
+      <div class="verdict">
+        <span id="pts" class="pts">+0</span>
+        <span id="tier" class="chip t-spiked">Spiked</span>
+      </div>
+      <p id="note" class="note"></p>
+      <div class="actions">
+        <button id="next" class="btn primary" type="button">Next headline</button>
+        <a id="source-link" href="#" target="_blank" rel="noopener">Read it at the source</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="screen-results" class="story" hidden aria-labelledby="final-hed">
+    <div class="kicker"><span class="section">Final edition</span><span class="outlet" id="final-date"></span></div>
+    <h2 id="final-hed" class="hed">Your front page is ready</h2>
+    <p class="total"><span id="total" class="big">0</span><span class="of" id="max">/ 700</span></p>
+    <p id="rank" class="rank"></p>
+    <ol id="recap" class="recap"></ol>
+    <div class="actions">
+      <button id="copy" class="btn primary" type="button">Copy results</button>
+      <button id="again" class="btn" type="button">Play again</button>
+    </div>
+    <textarea id="share-fallback" class="share-fallback" readonly hidden aria-label="Results to copy"></textarea>
+    <!-- AD SLOT (results screen): paste an ad unit here. -->
+    <p class="foot"><span id="decoy-note">The wrong endings were written for this game and never ran anywhere.</span> Real headlines are quoted from the outlets linked above. Headlines via <a href="https://newsdata.io" target="_blank" rel="noopener">NewsData.io</a>.</p>
+  </section>
+
+</div>
+
+<script>
+/* Built-in edition, used only if edition.json can't be loaded (for example, opening this file directly). */
+const FALLBACK_EDITION = {
+  number: 1,
+  key: "2026-11-15",
+  dateLabel: "Sunday, November 15, 2026",
+  shortDate: "Nov 15, 2026",
+  seconds: 20,
+  decoySource: "written",
+  headlines: [
+    {
+      "section": "Science",
+      "outlet": "SciTechDaily",
+      "date": "Nov 14",
+      "url": "https://scitechdaily.com/",
+      "lead": "A 3-Million-Year-Old Fossil Is Turning",
+      "rest": "the Story of Human Evolution Upside Down",
+      "decoys": [
+        "Up Evidence of the Oldest Known Burial",
+        "Scientists Against Each Other Over Its Age",
+        "Our Picture of Early Diets Inside Out"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Euronews",
+      "date": "Nov 15",
+      "url": "https://www.euronews.com/video/2026/11/15/latest-news-bulletin-november-15th-2026-morning",
+      "lead": "Qatar and Turkey announce",
+      "rest": "a landmark defence alliance",
+      "decoys": [
+        "a new gas pipeline to Europe",
+        "a joint bid for the 2036 Olympics",
+        "a sweeping free trade agreement"
+      ]
+    },
+    {
+      "section": "Space",
+      "outlet": "Universe Today",
+      "date": "Nov 14",
+      "url": "https://www.universetoday.com/",
+      "lead": "Baby, She’s Back! SpaceX Catches",
+      "rest": "a Starship From Orbit for First Time",
+      "decoys": [
+        "a Lost Satellite and Brings It Home",
+        "Its Fairing Halves in Midair Again",
+        "a Dragon Capsule With a Robotic Arm"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Scientific American",
+      "date": "Nov 14",
+      "url": "https://www.scientificamerican.com/",
+      "lead": "We beat screwworm once. Here’s how",
+      "rest": "we’re trying to do it again",
+      "decoys": [
+        "it came back anyway",
+        "ranchers are fighting it this time",
+        "sterile flies saved the cattle industry"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "The Telegraph, via GoLocalProv",
+      "date": "Nov 15",
+      "url": "https://www.golocalprov.com/news/big-news-stories-overnight-sunday-november-15-2026",
+      "lead": "Putin demands Britain stop",
+      "rest": "defending Europe with nuclear weapons",
+      "decoys": [
+        "sending long-range missiles to Kyiv",
+        "training Ukrainian troops on British soil",
+        "seizing Russian oil tankers in the Channel"
+      ]
+    },
+    {
+      "section": "Space",
+      "outlet": "ScienceDaily",
+      "date": "Nov 12",
+      "url": "https://sciencedaily.com/releases/2026/11/261111005908.htm",
+      "lead": "NASA’s Perseverance confirms a key ingredient for life",
+      "rest": "hidden in ancient Mars rocks",
+      "decoys": [
+        "frozen beneath the Martian poles",
+        "in samples bound for Earth",
+        "drifting in the Martian atmosphere"
+      ]
+    },
+    {
+      "section": "Business",
+      "outlet": "CNBC",
+      "date": "Nov 14",
+      "url": "https://www.cnbc.com/technology/",
+      "lead": "Nvidia urged to consider",
+      "rest": "‘potential return of Jensen Huang’ by two major investors",
+      "decoys": [
+        "‘a clean break from its founder’ by top shareholders",
+        "an outside CEO as board probe widens, analysts say",
+        "pausing China chip sales until the probe ends"
+      ]
+    }
+  ]
+};
+let EDITION = FALLBACK_EDITION;
+
+/* ===== Scoring ===== */
+function maxScore() { return EDITION.headlines.length * 100; }
+function pointsFor(correct, leftMs) {
+  if (!correct) return 0;
+  return 50 + Math.round(50 * Math.max(0, leftMs) / (EDITION.seconds * 1000));
+}
+function tierOf(r) {
+  if (r.timedOut) return { name: "Missed deadline", cls: "t-late", sq: "⬜" };
+  if (!r.correct) return { name: "Spiked", cls: "t-spiked", sq: "🟥" };
+  if (r.pts >= 80) return { name: "Scoop", cls: "t-scoop", sq: "🟩" };
+  return { name: "Front page", cls: "t-front", sq: "🟨" };
+}
+function rankOf(total) {
+  const share = total / maxScore();
+  if (share >= 0.86) return "Editor-in-chief";
+  if (share >= 0.64) return "Managing editor";
+  if (share >= 0.43) return "Staff reporter";
+  if (share >= 0.21) return "Cub reporter";
+  return "Intern";
+}
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+const NUMBER_WORDS = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+const DECOY_NOTES = {
+  ai: "The wrong endings were written for this game by AI and never ran anywhere.",
+  written: "The wrong endings were written for this game and never ran anywhere.",
+  borrowed: "The wrong endings are borrowed from other headlines and paired at random. None ran as shown.",
+  mixed: "The wrong endings were written for this game or borrowed from other headlines. None ran as shown.",
+};
+
+/* ===== Game ===== */
+const $ = id => document.getElementById(id);
+const screens = { start: $("screen-start"), round: $("screen-round"), results: $("screen-results") };
+const KEYS = ["A", "B", "C", "D"];
+let round = 0, results = [], deadline = 0, ticker = null, answered = true, choices = [];
+const storeKey = () => "daily-fill-in-mc-" + EDITION.key;
+
+function show(name) {
+  Object.entries(screens).forEach(([k, el]) => { el.hidden = k !== name; });
+  window.scrollTo(0, 0);
+}
+function renderHed(el, h, state) {
+  el.textContent = "";
+  el.append(document.createTextNode(h.lead + " "));
+  if (!state) {
+    const b = document.createElement("span");
+    b.className = "blank";
+    b.setAttribute("aria-label", "missing ending");
+    el.append(b);
+  } else {
+    const s = document.createElement("span");
+    s.className = state === "hit" ? "w-hit" : "w-miss";
+    s.textContent = h.rest;
+    el.append(s);
+  }
+}
+function total() { return results.reduce((a, r) => a + r.pts, 0); }
+
+function startGame() {
+  round = 0; results = [];
+  show("round");
+  startRound();
+}
+function startRound() {
+  const h = EDITION.headlines[round];
+  answered = false;
+  $("round-label").textContent = `Headline ${round + 1} of ${EDITION.headlines.length}`;
+  $("running").textContent = `${total()} pts`;
+  $("section").textContent = h.section;
+  $("outlet").textContent = h.date ? `${h.outlet} · ${h.date}` : h.outlet;
+  renderHed($("hed"), h, null);
+
+  choices = shuffle([{ text: h.rest, real: true }, ...h.decoys.slice(0, 3).map(t => ({ text: t, real: false }))]);
+  const box = $("options");
+  box.textContent = "";
+  choices.forEach((c, i) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "opt";
+    b.id = "opt-" + i;
+    const k = document.createElement("span"); k.className = "key"; k.textContent = KEYS[i];
+    const t = document.createElement("span"); t.className = "text"; t.textContent = "…" + c.text;
+    b.append(k, t);
+    b.addEventListener("click", () => answer(i));
+    box.append(b);
+  });
+  $("pick-label").textContent = "Pick the real ending";
+  $("reveal").hidden = true;
+
+  deadline = performance.now() + EDITION.seconds * 1000;
+  clearInterval(ticker);
+  ticker = setInterval(tick, 100);
+  tick();
+}
+function tick() {
+  const left = Math.max(0, deadline - performance.now());
+  $("clock").textContent = Math.ceil(left / 1000);
+  $("timefill").style.width = (left / (EDITION.seconds * 1000) * 100) + "%";
+  const low = left < 6000;
+  $("timebar").classList.toggle("low", low);
+  $("clock").classList.toggle("low", low);
+  if (left <= 0) answer(null);
+}
+function answer(index) {
+  if (answered) return;
+  answered = true;
+  clearInterval(ticker);
+  const left = Math.max(0, deadline - performance.now());
+  const h = EDITION.headlines[round];
+  const timedOut = index === null;
+  const correct = !timedOut && choices[index].real;
+  const pts = pointsFor(correct, left);
+  const r = { pts, correct, timedOut, picked: timedOut ? null : choices[index].text };
+  results.push(r);
+
+  [...$("options").children].forEach((btn, i) => {
+    btn.disabled = true;
+    if (choices[i].real) btn.classList.add("right");
+    else if (i === index) btn.classList.add("wrong");
+    else btn.classList.add("dim");
+  });
+  $("pick-label").textContent = correct ? "You picked the real ending" : timedOut ? "Out of time" : "That one was a decoy";
+  renderHed($("hed"), h, correct ? "hit" : "miss");
+
+  const t = tierOf(r);
+  const ptsEl = $("pts");
+  ptsEl.textContent = "+" + pts;
+  ptsEl.classList.remove("stamp"); void ptsEl.offsetWidth; ptsEl.classList.add("stamp");
+  $("tier").className = "chip " + t.cls;
+  $("tier").textContent = t.name;
+  const secsUsed = ((EDITION.seconds * 1000 - left) / 1000).toFixed(1);
+  $("note").textContent = correct
+    ? `Right, in ${secsUsed} seconds.`
+    : timedOut ? "The clock ran out. The real ending is in blue."
+    : "The real ending is in blue, and highlighted below.";
+  $("source-link").href = h.url;
+  $("source-link").textContent = `Read it at ${h.outlet.replace(/, via .*/, "")}`;
+  $("running").textContent = `${total()} pts`;
+  $("next").textContent = round === EDITION.headlines.length - 1 ? "See final score" : "Next headline";
+  $("reveal").hidden = false;
+  $("next").focus({ preventScroll: true });
+  $("reveal").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest" });
+}
+function next() {
+  round++;
+  if (round < EDITION.headlines.length) startRound();
+  else finish();
+}
+function finish() {
+  const sum = total();
+  $("total").textContent = sum;
+  $("max").textContent = "/ " + maxScore();
+  $("final-date").textContent = EDITION.dateLabel;
+  $("rank").textContent = "";
+  const strong = document.createElement("strong");
+  strong.textContent = rankOf(sum);
+  $("rank").append("Your masthead title: ", strong);
+  const right = results.filter(r => r.correct).length;
+  $("final-hed").textContent = `${right} of ${EDITION.headlines.length} real endings spotted`;
+
+  const list = $("recap");
+  list.textContent = "";
+  EDITION.headlines.forEach((h, i) => {
+    const r = results[i];
+    const li = document.createElement("li");
+    const hed = document.createElement("div");
+    hed.className = "r-hed";
+    renderHed(hed, h, r.correct ? "hit" : "miss");
+    const p = document.createElement("div");
+    p.className = "r-pts";
+    p.textContent = r.pts;
+    const meta = document.createElement("div");
+    meta.className = "r-meta";
+    const a = document.createElement("a");
+    a.href = h.url; a.target = "_blank"; a.rel = "noopener";
+    a.textContent = h.outlet;
+    meta.append(tierOf(r).name + " · ", a, h.date ? " · " + h.date : "");
+    if (!r.correct && r.picked) {
+      const pk = document.createElement("div");
+      pk.append("You picked: ");
+      const s = document.createElement("span");
+      s.className = "picked";
+      s.textContent = "…" + r.picked;
+      pk.append(s);
+      meta.append(pk);
+    }
+    li.append(hed, p, meta);
+    list.append(li);
+  });
+  $("share-fallback").hidden = true;
+  $("copy").textContent = "Copy results";
+  try { localStorage.setItem(storeKey(), JSON.stringify({ total: sum, right })); } catch (e) {}
+  show("results");
+}
+function shareText() {
+  const sum = total();
+  const right = results.filter(r => r.correct).length;
+  return `The Daily Fill-In No. ${EDITION.number} · ${EDITION.shortDate}\n${sum}/${maxScore()} · ${right}/${EDITION.headlines.length} · ${rankOf(sum)}\n${results.map(r => tierOf(r).sq).join("")}`;
+}
+async function copyResults() {
+  const text = shareText();
+  try {
+    await navigator.clipboard.writeText(text);
+    $("copy").textContent = "Copied";
+  } catch (e) {
+    const ta = $("share-fallback");
+    ta.value = text;
+    ta.hidden = false;
+    ta.focus(); ta.select();
+    $("copy").textContent = "Select and copy below";
+  }
+}
+function showPrior() {
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem(storeKey()) || "null"); } catch (e) {}
+  const el = $("prior");
+  if (saved && typeof saved.total === "number") {
+    el.textContent = "";
+    const s = document.createElement("strong");
+    s.textContent = `${saved.total}/${maxScore()}`;
+    el.append("You already played this edition and scored ", s, ". You can play it again.");
+    el.hidden = false;
+    $("start").textContent = "Play this edition again";
+  } else {
+    el.hidden = true;
+    $("start").textContent = "Start today’s edition";
+  }
+}
+function applyEdition() {
+  const n = EDITION.headlines.length;
+  $("ed-no").textContent = "No. " + EDITION.number;
+  $("ed-date").textContent = EDITION.dateLabel;
+  $("ed-count").textContent = `${NUMBER_WORDS[n] || n} headlines`;
+  $("secs-label").textContent = EDITION.seconds + " seconds";
+  $("max").textContent = "/ " + maxScore();
+  $("decoy-note").textContent = DECOY_NOTES[EDITION.decoySource] || DECOY_NOTES.mixed;
+  if (EDITION.newsDateLabel) {
+    $("start-hed").textContent = "Real headlines from yesterday’s news. Can you spot how they end?";
+    $("news-day").textContent = `Every headline ran on ${EDITION.newsDateLabel}. `;
+  } else {
+    $("start-hed").textContent = "Real headlines from the news. Can you spot how they end?";
+    $("news-day").textContent = "";
+  }
+  showPrior();
+  $("start").disabled = false;
+}
+function isValidEdition(e) {
+  return e && Array.isArray(e.headlines) && e.headlines.length >= 3 &&
+    e.headlines.every(h => h && h.lead && h.rest && Array.isArray(h.decoys) && h.decoys.length >= 3 && h.url);
+}
+async function loadEdition() {
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 6000);
+    const res = await fetch("edition.json", { cache: "no-store", signal: ctrl.signal });
+    clearTimeout(timer);
+    if (res.ok) {
+      const e = await res.json();
+      if (isValidEdition(e)) EDITION = { seconds: 20, ...e };
+    }
+  } catch (e) { /* keep the built-in edition */ }
+  applyEdition();
+}
+
+document.addEventListener("keydown", e => {
+  if (screens.round.hidden || answered || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toUpperCase();
+  const i = ["1", "2", "3", "4"].indexOf(k) >= 0 ? Number(k) - 1 : KEYS.indexOf(k);
+  if (i >= 0 && i < choices.length) { e.preventDefault(); answer(i); }
+});
+$("start").addEventListener("click", startGame);
+$("next").addEventListener("click", next);
+$("again").addEventListener("click", startGame);
+$("copy").addEventListener("click", copyResults);
+loadEdition();
+</script>
+</body>
+</html>

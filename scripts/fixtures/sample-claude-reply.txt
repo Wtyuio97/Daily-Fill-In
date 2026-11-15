@@ -1,0 +1,12 @@
+Here is the JSON:
+```json
+[
+  {"id": "w3", "ok": true, "lead": "Macron says limiting Ukraine aid", "rest": "would pave way to 'another war'", "decoys": ["would weaken Europe's own defences", "is off the table for France", "must wait until peace talks end"]},
+  {"id": "b1", "ok": true, "lead": "Nvidia urged to consider", "rest": "'potential return of Jensen Huang' by two major investors", "decoys": ["'a clean break from its founder' by top shareholders", "an outside CEO as board probe widens, analysts say", "pausing China chip sales until the probe ends"]},
+  {"id": "t1", "ok": true, "lead": "Microsoft apologizes for", "rest": "massive outage at Outlook and other 365 services", "decoys": ["confusing new Windows update rollout", "price hike on Copilot business plans", "glitch that deleted Teams chat history"]},
+  {"id": "s4", "ok": true, "lead": "SpaceX catches upper stage of", "rest": "Starship rocket in historic first", "decoys": ["Falcon 9 with a new drone ship", "Starship on its third attempt"]},
+  {"id": "sp2", "ok": false, "lead": "", "rest": "", "decoys": []},
+  {"id": "e1", "ok": true, "lead": "Portugal: Humanoid robots", "rest": "take centre stage at Web Summit 2026", "decoys": ["steal the show at Lisbon Fashion Week", "start serving coffee across Lisbon", "join the crowd at a football match"]},
+  {"id": "p1", "ok": true, "lead": "Putin demands Britain STOP", "rest": "defending Europe with nuclear weapons", "decoys": ["sending long-range missiles to Kyiv", "training Ukrainian troops on British soil", "seizing Russian oil tankers in the Channel"]}
+]
+```

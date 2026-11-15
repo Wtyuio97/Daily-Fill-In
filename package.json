@@ -1,0 +1,13 @@
+{
+  "name": "daily-fill-in",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A daily news game: pick the real ending of real headlines.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build-edition.mjs",
+    "test-build": "node scripts/build-edition.mjs --mock scripts/fixtures/sample-newsdata.json --claude-mock scripts/fixtures/sample-claude-reply.txt --out test-edition.json",
+    "serve": "python3 -m http.server 8080 --directory site"
+  }
+}
