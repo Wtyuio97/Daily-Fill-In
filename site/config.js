@@ -2,6 +2,6 @@
 // Leave them empty to run the game without a leaderboard.
 // The publishable key is meant to be public: it can only call the two leaderboard functions.
 window.LEADERBOARD_CONFIG = {
-  url: "",   // your Supabase Project URL, e.g. "https://abcdefghijklmnop.supabase.co"
-  key: "",   // your Supabase publishable key, starts with "sb_publishable_"
+   url: "https://ibmlcfcuurdkefjdgatq.supabase.co",
+  key: "sb_publishable_ygES-YNUxdTY4WrI2B7Fkg_VyL3GjNf",   // your Supabase publishable key, starts with "sb_publishable_"
 };
