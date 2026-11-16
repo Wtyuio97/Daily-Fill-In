@@ -1,103 +1,103 @@
 {
-  "number": 1,
-  "key": "2026-11-15",
-  "dateLabel": "Sunday, November 15, 2026",
-  "shortDate": "Nov 15, 2026",
-  "newsKey": "2026-11-14",
-  "newsDateLabel": "Saturday, November 14, 2026",
+  "number": 2,
+  "key": "2026-11-16",
+  "dateLabel": "Monday, November 16, 2026",
+  "shortDate": "Nov 16, 2026",
+  "newsKey": "2026-11-15",
+  "newsDateLabel": "Sunday, November 15, 2026",
   "seconds": 20,
   "decoySource": "borrowed",
-  "generatedAt": "2026-11-15T21:54:07.305Z",
+  "generatedAt": "2026-11-16T20:28:19.725Z",
   "headlines": [
     {
       "section": "World",
       "outlet": "Los Angeles Times",
-      "date": "Nov 14",
-      "url": "https://www.latimes.com/world-nation/story/2026-11-14/men-lead-rally-in-switzerland-to-protest-violence-against-women",
-      "lead": "Men lead rally in Switzerland",
-      "rest": "to protest violence against women",
+      "date": "Nov 15",
+      "url": "https://www.latimes.com/world-nation/story/2026-11-15/prague-protext-decries-czech-plan-to-overhaul-public-media-funding",
+      "lead": "Mass protest in Prague decries government plan",
+      "rest": "to overhaul public media funding",
       "decoys": [
-        "from orbit in spectacular fashion",
-        "in police pursuit on I-5",
-        "as ASEAN leaders gather"
+        "as enrollment closes for candidates",
+        "on scrapping 3pm TV blackout",
+        "and that leg is AI"
       ]
     },
     {
       "section": "Science",
-      "outlet": "Google News",
-      "date": "Nov 14",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdDRuVnVyOTEzaEJyYTB6enZwOTBSSFZsRmRHQWxUeThuR3FZd0RFbk1FVkVQWkJtLW9hZG9vcnY3bl9OWnI2ckVlM2dqVTNHTjlnaXhNVkhkWGpfQWE0N1NwbndxcnZtdmVHeExtQVpGWDc0akNQaE1UcVhmWjJydlgyVGtvaEFSQmhHWFRXQVFmM2VHUEU0b1ZlOA?oc=5",
-      "lead": "SpaceX catches Starship for first time,",
-      "rest": "drawing praise in Washington - The Hill",
+      "outlet": "Abc News",
+      "date": "Nov 15",
+      "url": "https://abcnews.com/US/apple-launches-ai-health-chatbot-part-research-study/story?id=138164909",
+      "lead": "Apple launches an AI health tool",
+      "rest": "as part of a research study",
       "decoys": [
-        "trading his Stim Pistol for telemedicine",
-        "shining like a trillion suns",
-        "to unlock a crystal's hidden electrical powers"
-      ]
-    },
-    {
-      "section": "Health",
-      "outlet": "Science Daily",
-      "date": "Nov 14",
-      "url": "https://www.sciencedaily.com/releases/2026/11/261114202130.htm",
-      "lead": "Alzheimer’s may start shrinking two",
-      "rest": "brain regions years before memory loss",
-      "decoys": [
-        "calls in lawyers over disputed reports",
-        "plan is not just about food",
-        "rare particle decay, New Scientist reports"
+        "but open to 2027 summer loan",
+        "about upcoming season - The Independent",
+        "to know before Monday night's game"
       ]
     },
     {
       "section": "World",
       "outlet": "Wsj",
-      "date": "Nov 14",
-      "url": "https://www.wsj.com/world/middle-east/iran-attacks-bahrain-as-conflict-escalates-62ffd1b3?mod=rss_worldnews",
-      "lead": "Iran Attacks Bahrain",
-      "rest": "as Conflict Escalates",
+      "date": "Nov 15",
+      "url": "https://www.wsj.com/finance/-63dc4bbf?mod=rss_worldnews",
+      "lead": "Path for Asian Bonds,",
+      "rest": "Currencies More Bullish in 2027, Goldman Sachs Says",
       "decoys": [
-        "for Europe’s Future?",
-        "for Enterprise Teams",
-        "and Dosing"
+        "One Search Across the World of Entertainment",
+        "Black Leaders See a Milestone—and a Test",
+        "Ice Hockey as Canada refuses entry"
       ]
     },
     {
       "section": "Science",
-      "outlet": "Cbs News",
-      "date": "Nov 14",
-      "url": "https://www.cbsnews.com/news/spacex-catch-starship-rocket/",
-      "lead": "SpaceX pulls off first Starship recovery",
-      "rest": "from orbit in spectacular fashion",
+      "outlet": "Financial Times",
+      "date": "Nov 15",
+      "url": "https://www.ft.com/content/450100ba-074c-46a6-b962-89dbef146135?syn-25a6b1a6=1",
+      "lead": "Johnson & Johnson looking",
+      "rest": "to buy eye disease biotech for up to $3.4bn",
       "decoys": [
-        "to protest violence against women",
-        "in police pursuit on I-5",
-        "on a move to Barcelona revealed"
+        "to help clients see more of their trading data",
+        "by Real Madrid in Negreira case – report",
+        "and robotics fund for a very concrete problem"
       ]
     },
     {
       "section": "World",
-      "outlet": "The Bbc",
-      "date": "Nov 14",
-      "url": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o",
-      "lead": "Judge temporarily blocks Trump",
-      "rest": "from closing Washington DC golf course for renovation",
+      "outlet": "Skynew",
+      "date": "Nov 15",
+      "url": "https://news.sky.com/story/william-and-kate-land-in-mumbai-for-earthshot-prize-trip-13612656",
+      "lead": "William and Kate land",
+      "rest": "in Mumbai for Earthshot Prize trip",
       "decoys": [
-        "as ex Russell Brand moved to 'cushy' jail",
-        "and the Python library designed to fix them",
-        "over claims it was 'sold under duress'"
+        "With an Ally Resisting Chinese Aggression",
+        "Than Influencers Say - The Dispatch",
+        "to Nvidia 'very slim': David Roche"
       ]
     },
     {
       "section": "Science",
       "outlet": "Digg",
-      "date": "Nov 14",
-      "url": "https://digg.com/ai/u09ow6ns",
-      "lead": "Researchers say ‘drifting’ squeezes each ImageNet class",
-      "rest": "into 10 synthetic images",
+      "date": "Nov 15",
+      "url": "https://digg.com/science/ucf5vv4l",
+      "lead": "Avi Loeb argues asteroid 1998 KY26",
+      "rest": "may not be natural; NASA disagrees",
       "decoys": [
-        "after Payne's 20-point outing",
-        "for struggling Barcelona defender",
-        "for £66m Bundesliga star"
+        "care clinic is a bitter pill",
+        "is reunited with his teenage owner",
+        "that elevates China's status: David Roche"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Ktla5",
+      "date": "Nov 15",
+      "url": "https://ktla.com/news/california/socal-motorcyclist-caught-going-136-mph-on-highway-101-chp/",
+      "lead": "SoCal motorcyclist caught going 136 mph",
+      "rest": "on Highway 101: CHP",
+      "decoys": [
+        "and bragging on X",
+        "as leader of FAA",
+        "to the Neolithic revolution"
       ]
     }
   ]
