@@ -1,0 +1,104 @@
+{
+  "number": 3,
+  "key": "2026-11-17",
+  "dateLabel": "Tuesday, November 17, 2026",
+  "shortDate": "Nov 17, 2026",
+  "newsKey": "2026-11-16",
+  "newsDateLabel": "Monday, November 16, 2026",
+  "seconds": 20,
+  "decoySource": "borrowed",
+  "generatedAt": "2026-11-17T19:11:20.065Z",
+  "headlines": [
+    {
+      "section": "World",
+      "outlet": "Usnews",
+      "date": "Nov 16",
+      "url": "https://www.usnews.com/news/world/articles/2026-11-16/france-malaysia-eye-defence-rare-earths-cooperation-during-macron-visit-to-kuala-lumpur",
+      "lead": "France, Malaysia Eye Defence, Rare Earths Cooperation",
+      "rest": "During Macron Visit to Kuala Lumpur",
+      "decoys": [
+        "to the Face in Awkward Mishap",
+        "After Viral Moment in Cowboys-49ers Broadcast",
+        "Over China Ahead of Xi Summit"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Businesswire",
+      "date": "Nov 16",
+      "url": "http://www.businesswire.com/news/home/20261116856120/en/BlueQubit-Names-Quantum-Flywheel-Awardees-Backed-by-IBM-AWS-and-NVIDIA-Accelerated-Computing/",
+      "lead": "BlueQubit Names Quantum Flywheel Awardees,",
+      "rest": "Backed by IBM, AWS, and NVIDIA Accelerated Computing",
+      "decoys": [
+        "Masterpiece Series Are Perfect From Start To Finish",
+        "Explained With a Filing Cabinet and a Door",
+        "Ladle and Netmore Call for Independent Temperature Monitoring"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Google News",
+      "date": "Nov 16",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0zYkdEZVpKUlUwNkN4OXpfNWl3ZURXbk1VaU5RY2tyOEdQY3RleDEwVmpTUFB5UnNNX3RNT2pzUmt2c0xBZUJLLWF1NE9kSktraTcwUmpaa1NMMy1xNlVXbmNfN1dUZ2g5TldB?oc=5",
+      "lead": "Doctors And Nurses Are Sharing The Terrifying",
+      "rest": "Things They Witnessed In Hospitals - BuzzFeed",
+      "decoys": [
+        "Davis ‘a Born Storyteller’ After Keane Cover",
+        "Way versus Aurora - NASA Science (.gov)",
+        "Explained With a Filing Cabinet and a Door"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "The Guardian",
+      "date": "Nov 16",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/17/cfmeu-bandidos-bikie-joel-leavitt-big-build-royal-commission-ntwnfb",
+      "lead": "CFMEU pushed to get notorious Bandidos member hired",
+      "rest": "on construction project, Big Build royal commission hears",
+      "decoys": [
+        "in regional NSW because her baby was crying",
+        "while Ottawa-Washington relations are strained - AP News",
+        "from former Real Madrid captain: ‘Never seen before’"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Benzinga",
+      "date": "Nov 16",
+      "url": "https://www.benzinga.com/markets/tech/26/11/63329696/nvidia-jensen-huang-comeback",
+      "lead": "‘The Odds Are Almost Zero’:",
+      "rest": "Scott Galloway Doesn’t See Jensen Huang Returning to Nvidia",
+      "decoys": [
+        "Masterpiece Series Are Perfect From Start To Finish",
+        "Explained With a Filing Cabinet and a Door",
+        "\"AI Took the Jobs\" Is the Wrong Lesson for Developers"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "World Health Organization",
+      "date": "Nov 16",
+      "url": "https://www.who.int/news/item/17-11-2026-countries-expand-cervical-cancer-screening-and-treatment--bringing-elimination-closer",
+      "lead": "Countries expand cervical cancer screening",
+      "rest": "and treatment, bringing elimination closer",
+      "decoys": [
+        "by Germany: ‘Who wrote that?’",
+        "toward EVs: AC Mobility CEO",
+        "on the behavior of dogs"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Abc News",
+      "date": "Nov 16",
+      "url": "https://abcnews.com/International/wireStory/mozambiques-venancio-mondlane-latest-opposition-leader-trial-africa-138196123",
+      "lead": "Mozambique's Mondlane is the latest opposition leader",
+      "rest": "to go on trial in Africa",
+      "decoys": [
+        "to China - The Washington Post",
+        "over token costs and failed runs",
+        "on chip supply: Thailand Vice Minister"
+      ]
+    }
+  ]
+}
