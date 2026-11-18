@@ -1,103 +1,103 @@
 {
-  "number": 3,
-  "key": "2026-11-17",
-  "dateLabel": "Tuesday, November 17, 2026",
-  "shortDate": "Nov 17, 2026",
-  "newsKey": "2026-11-16",
-  "newsDateLabel": "Monday, November 16, 2026",
+  "number": 4,
+  "key": "2026-11-18",
+  "dateLabel": "Wednesday, November 18, 2026",
+  "shortDate": "Nov 18, 2026",
+  "newsKey": "2026-11-17",
+  "newsDateLabel": "Tuesday, November 17, 2026",
   "seconds": 20,
   "decoySource": "borrowed",
-  "generatedAt": "2026-11-17T19:11:20.065Z",
+  "generatedAt": "2026-11-18T18:51:15.336Z",
   "headlines": [
     {
       "section": "World",
-      "outlet": "Usnews",
-      "date": "Nov 16",
-      "url": "https://www.usnews.com/news/world/articles/2026-11-16/france-malaysia-eye-defence-rare-earths-cooperation-during-macron-visit-to-kuala-lumpur",
-      "lead": "France, Malaysia Eye Defence, Rare Earths Cooperation",
-      "rest": "During Macron Visit to Kuala Lumpur",
-      "decoys": [
-        "to the Face in Awkward Mishap",
-        "After Viral Moment in Cowboys-49ers Broadcast",
-        "Over China Ahead of Xi Summit"
-      ]
-    },
-    {
-      "section": "Science",
-      "outlet": "Businesswire",
-      "date": "Nov 16",
-      "url": "http://www.businesswire.com/news/home/20261116856120/en/BlueQubit-Names-Quantum-Flywheel-Awardees-Backed-by-IBM-AWS-and-NVIDIA-Accelerated-Computing/",
-      "lead": "BlueQubit Names Quantum Flywheel Awardees,",
-      "rest": "Backed by IBM, AWS, and NVIDIA Accelerated Computing",
-      "decoys": [
-        "Masterpiece Series Are Perfect From Start To Finish",
-        "Explained With a Filing Cabinet and a Door",
-        "Ladle and Netmore Call for Independent Temperature Monitoring"
-      ]
-    },
-    {
-      "section": "Health",
-      "outlet": "Google News",
-      "date": "Nov 16",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0zYkdEZVpKUlUwNkN4OXpfNWl3ZURXbk1VaU5RY2tyOEdQY3RleDEwVmpTUFB5UnNNX3RNT2pzUmt2c0xBZUJLLWF1NE9kSktraTcwUmpaa1NMMy1xNlVXbmNfN1dUZ2g5TldB?oc=5",
-      "lead": "Doctors And Nurses Are Sharing The Terrifying",
-      "rest": "Things They Witnessed In Hospitals - BuzzFeed",
-      "decoys": [
-        "Davis ‘a Born Storyteller’ After Keane Cover",
-        "Way versus Aurora - NASA Science (.gov)",
-        "Explained With a Filing Cabinet and a Door"
-      ]
-    },
-    {
-      "section": "World",
       "outlet": "The Guardian",
-      "date": "Nov 16",
-      "url": "https://www.theguardian.com/australia-news/2026/nov/17/cfmeu-bandidos-bikie-joel-leavitt-big-build-royal-commission-ntwnfb",
-      "lead": "CFMEU pushed to get notorious Bandidos member hired",
-      "rest": "on construction project, Big Build royal commission hears",
+      "date": "Nov 17",
+      "url": "https://www.theguardian.com/us-news/2026/nov/17/white-house-withdraws-heidi-overton-fda",
+      "lead": "White House withdraws nomination of",
+      "rest": "Heidi Overton to lead FDA",
       "decoys": [
-        "in regional NSW because her baby was crying",
-        "while Ottawa-Washington relations are strained - AP News",
-        "from former Real Madrid captain: ‘Never seen before’"
+        "Brice Sensabaugh or the Jazz",
+        "Opus 5.5’s value for coding",
+        "included protein sequences at scale"
       ]
     },
     {
       "section": "Science",
-      "outlet": "Benzinga",
-      "date": "Nov 16",
-      "url": "https://www.benzinga.com/markets/tech/26/11/63329696/nvidia-jensen-huang-comeback",
-      "lead": "‘The Odds Are Almost Zero’:",
-      "rest": "Scott Galloway Doesn’t See Jensen Huang Returning to Nvidia",
+      "outlet": "Johns Hopkins University",
+      "date": "Nov 17",
+      "url": "https://www.jhunewsletter.com/article/2026/11/sga-discusses-catering-for-tabling-event-and-reforms-to-disciplinary-system",
+      "lead": "SGA discusses catering for tabling event",
+      "rest": "and reforms to disciplinary system",
       "decoys": [
-        "Masterpiece Series Are Perfect From Start To Finish",
-        "Explained With a Filing Cabinet and a Door",
-        "\"AI Took the Jobs\" Is the Wrong Lesson for Developers"
+        "in final midterms Senate race",
+        "says Rubio - The Guardian",
+        "and tighten grip on Yemen"
       ]
     },
     {
       "section": "Health",
-      "outlet": "World Health Organization",
-      "date": "Nov 16",
-      "url": "https://www.who.int/news/item/17-11-2026-countries-expand-cervical-cancer-screening-and-treatment--bringing-elimination-closer",
-      "lead": "Countries expand cervical cancer screening",
-      "rest": "and treatment, bringing elimination closer",
+      "outlet": "Cnbc",
+      "date": "Nov 17",
+      "url": "https://www.cnbc.com/video/2026/11/18/arms-rene-haas-leads-nvidia-ceo-race-but-company-ties-could-be-hurdle.html",
+      "lead": "Arm's Rene Haas leads Nvidia CEO race,",
+      "rest": "but company ties could be a hurdle: Analyst",
       "decoys": [
-        "by Germany: ‘Who wrote that?’",
-        "toward EVs: AC Mobility CEO",
-        "on the behavior of dogs"
+        "over 500 times its budget—now it’s on Netflix",
+        "to reinstate Jensen Huang as CEO, chairman says",
+        "to stun Golden Knights for third straight win"
       ]
     },
     {
       "section": "World",
-      "outlet": "Abc News",
-      "date": "Nov 16",
-      "url": "https://abcnews.com/International/wireStory/mozambiques-venancio-mondlane-latest-opposition-leader-trial-africa-138196123",
-      "lead": "Mozambique's Mondlane is the latest opposition leader",
-      "rest": "to go on trial in Africa",
+      "outlet": "Wsj",
+      "date": "Nov 17",
+      "url": "https://www.wsj.com/world/middle-east/iran-attacks-kuwait-and-bahrain-further-escalating-fight-over-strait-08f3a436?mod=rss_worldnews",
+      "lead": "Iran Attacks Kuwait and Bahrain,",
+      "rest": "Further Escalating Fight Over Strait",
       "decoys": [
-        "to China - The Washington Post",
-        "over token costs and failed runs",
-        "on chip supply: Thailand Vice Minister"
+        "We Went Inside His Bunker.",
+        "Ascension Officially Announced For 2027",
+        "Cancer Doctor Would Never Do"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Digg",
+      "date": "Nov 17",
+      "url": "https://digg.com/ai/xec3e84r",
+      "lead": "TuXinming says Claude’s training diet",
+      "rest": "included protein sequences at scale",
+      "decoys": [
+        "Heidi Overton to lead FDA",
+        "Opus 5.5’s value for coding",
+        "AI agents for business payments"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Daily Express Us",
+      "date": "Nov 17",
+      "url": "https://www.the-express.com/news/world-news/219960/outrage-trump-ally-hangs-flag",
+      "lead": "Outrage as Trump ally hangs giant Russian flag",
+      "rest": "in US city to commemorate Kremlin official",
+      "decoys": [
+        "in ‘The Symphony of Dance,’ People reports",
+        "to be hired by Michigan, per report",
+        "to becoming House speaker during leadership elections"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Phys.org",
+      "date": "Nov 17",
+      "url": "https://phys.org/news/2026-11-photon-fluctuations-probe-electron-dynamics.html",
+      "lead": "Photon fluctuations offer new way",
+      "rest": "to probe electron dynamics in crystals",
+      "decoys": [
+        "during 'breathtaking' arrival at Earthshot awards",
+        "despite U.S. chip curbs: Morgan Stanley",
+        "in pitch to APEC business leaders"
       ]
     }
   ]

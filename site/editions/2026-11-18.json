@@ -1,0 +1,104 @@
+{
+  "number": 4,
+  "key": "2026-11-18",
+  "dateLabel": "Wednesday, November 18, 2026",
+  "shortDate": "Nov 18, 2026",
+  "newsKey": "2026-11-17",
+  "newsDateLabel": "Tuesday, November 17, 2026",
+  "seconds": 20,
+  "decoySource": "borrowed",
+  "generatedAt": "2026-11-18T18:51:15.336Z",
+  "headlines": [
+    {
+      "section": "World",
+      "outlet": "The Guardian",
+      "date": "Nov 17",
+      "url": "https://www.theguardian.com/us-news/2026/nov/17/white-house-withdraws-heidi-overton-fda",
+      "lead": "White House withdraws nomination of",
+      "rest": "Heidi Overton to lead FDA",
+      "decoys": [
+        "Brice Sensabaugh or the Jazz",
+        "Opus 5.5’s value for coding",
+        "included protein sequences at scale"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Johns Hopkins University",
+      "date": "Nov 17",
+      "url": "https://www.jhunewsletter.com/article/2026/11/sga-discusses-catering-for-tabling-event-and-reforms-to-disciplinary-system",
+      "lead": "SGA discusses catering for tabling event",
+      "rest": "and reforms to disciplinary system",
+      "decoys": [
+        "in final midterms Senate race",
+        "says Rubio - The Guardian",
+        "and tighten grip on Yemen"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Cnbc",
+      "date": "Nov 17",
+      "url": "https://www.cnbc.com/video/2026/11/18/arms-rene-haas-leads-nvidia-ceo-race-but-company-ties-could-be-hurdle.html",
+      "lead": "Arm's Rene Haas leads Nvidia CEO race,",
+      "rest": "but company ties could be a hurdle: Analyst",
+      "decoys": [
+        "over 500 times its budget—now it’s on Netflix",
+        "to reinstate Jensen Huang as CEO, chairman says",
+        "to stun Golden Knights for third straight win"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Wsj",
+      "date": "Nov 17",
+      "url": "https://www.wsj.com/world/middle-east/iran-attacks-kuwait-and-bahrain-further-escalating-fight-over-strait-08f3a436?mod=rss_worldnews",
+      "lead": "Iran Attacks Kuwait and Bahrain,",
+      "rest": "Further Escalating Fight Over Strait",
+      "decoys": [
+        "We Went Inside His Bunker.",
+        "Ascension Officially Announced For 2027",
+        "Cancer Doctor Would Never Do"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Digg",
+      "date": "Nov 17",
+      "url": "https://digg.com/ai/xec3e84r",
+      "lead": "TuXinming says Claude’s training diet",
+      "rest": "included protein sequences at scale",
+      "decoys": [
+        "Heidi Overton to lead FDA",
+        "Opus 5.5’s value for coding",
+        "AI agents for business payments"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Daily Express Us",
+      "date": "Nov 17",
+      "url": "https://www.the-express.com/news/world-news/219960/outrage-trump-ally-hangs-flag",
+      "lead": "Outrage as Trump ally hangs giant Russian flag",
+      "rest": "in US city to commemorate Kremlin official",
+      "decoys": [
+        "in ‘The Symphony of Dance,’ People reports",
+        "to be hired by Michigan, per report",
+        "to becoming House speaker during leadership elections"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Phys.org",
+      "date": "Nov 17",
+      "url": "https://phys.org/news/2026-11-photon-fluctuations-probe-electron-dynamics.html",
+      "lead": "Photon fluctuations offer new way",
+      "rest": "to probe electron dynamics in crystals",
+      "decoys": [
+        "during 'breathtaking' arrival at Earthshot awards",
+        "despite U.S. chip curbs: Morgan Stanley",
+        "in pitch to APEC business leaders"
+      ]
+    }
+  ]
+}
