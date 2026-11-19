@@ -1,0 +1,104 @@
+{
+  "number": 5,
+  "key": "2026-11-19",
+  "dateLabel": "Thursday, November 19, 2026",
+  "shortDate": "Nov 19, 2026",
+  "newsKey": "2026-11-18",
+  "newsDateLabel": "Wednesday, November 18, 2026",
+  "seconds": 20,
+  "decoySource": "borrowed",
+  "generatedAt": "2026-11-19T18:59:22.538Z",
+  "headlines": [
+    {
+      "section": "World",
+      "outlet": "Usnews",
+      "date": "Nov 18",
+      "url": "https://www.usnews.com/news/world/articles/2026-11-18/new-zealand-court-rules-governments-pay-equity-overhaul-violated-womens-rights",
+      "lead": "New Zealand Court Rules Government's",
+      "rest": "Pay Equity Overhaul Violated Women's Rights",
+      "decoys": [
+        "if High-Speed Rail Grew Too Fast",
+        "New Plans Take Shape In LA",
+        "United Players to Target Under Pochettino"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Cbs News",
+      "date": "Nov 18",
+      "url": "https://www.cbsnews.com/video/inside-the-world-of-chinas-humanoid-robots/",
+      "lead": "Inside the world",
+      "rest": "of China's humanoid robots",
+      "decoys": [
+        "back old home movies",
+        "not slowing down: Barclays",
+        "not a revolution: Schroders"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Google News",
+      "date": "Nov 18",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSF9oV2ROZFhYNWU0SU04ZFJ0WUpJYzBVLUswS211NU9DdFNZV3VrTzVGakhuOGI4RDBMWWNVdFlob0h5STlLM0FNZEpJZmNrN1pFTFVSLWFrbWJSdEZEQjdpU2I4UjJ6SlRybXdSRHBzUi1BcGpncXJSLUc5Q0tRSjljeHR3NDlZMVdGdnBPREFtYkZFcVZLR0lhRkFTUC1SXzYzLUZTemtQOWw0U3dSZVBJSzNVd1gwWmRleUZn?oc=5",
+      "lead": "Minnesota to look at removing non-medical vaccine",
+      "rest": "exemption this legislative session - 5 EYEWITNESS NEWS",
+      "decoys": [
+        "Study shows arts education benefits students with disabilities",
+        "Your presentation is ready for next time",
+        "finds 'his own peace' after Sandpapergate claims"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "The Guardian",
+      "date": "Nov 18",
+      "url": "https://www.theguardian.com/books/2026/nov/19/hannah-lillith-assadi-paradiso-17-wins-national-book-award",
+      "lead": "Hannah Lillith Assadi wins National book award",
+      "rest": "for ‘visionary’ novel Paradiso 17",
+      "decoys": [
+        "from natural gas begins operations",
+        "by general into Trump meeting",
+        "from Trump-Xi-Putin arms control talks"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Digg",
+      "date": "Nov 18",
+      "url": "https://digg.com/ai/n5cwl8mo",
+      "lead": "ValsAI says GPT-6.2 Astra may have delivered",
+      "rest": "the first Lean proof of Smoktunowicz’s Gap Theorem",
+      "decoys": [
+        "the war already if Ukraine didn’t have Starlink",
+        "to a customer-facing AI agent: an enterprise checklist",
+        "and other Chinese robot makers ahead of CES"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Cnbc",
+      "date": "Nov 18",
+      "url": "https://www.cnbc.com/video/2026/11/19/crypto-sell-off-could-reverse-after-anthropic-ipo-ripple-ceo.html",
+      "lead": "Crypto sell-off could reverse",
+      "rest": "after Anthropic IPO: Ripple CEO",
+      "decoys": [
+        "with Ferrari team - Hamilton",
+        "despite AI spending: J&T Express",
+        "for ‘visionary’ novel Paradiso 17"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Wsj",
+      "date": "Nov 18",
+      "url": "https://www.wsj.com/finance/asian-equities-decline-as-caution-prevails-eaf3c1e9?mod=rss_worldnews",
+      "lead": "Asian Equities Decline",
+      "rest": "as Caution Prevails",
+      "decoys": [
+        "After Hours: Here's Why",
+        "to Make Business Simpler",
+        "for Bonkers MAGA Bombshell"
+      ]
+    }
+  ]
+}

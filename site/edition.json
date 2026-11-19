@@ -1,103 +1,103 @@
 {
-  "number": 4,
-  "key": "2026-11-18",
-  "dateLabel": "Wednesday, November 18, 2026",
-  "shortDate": "Nov 18, 2026",
-  "newsKey": "2026-11-17",
-  "newsDateLabel": "Tuesday, November 17, 2026",
+  "number": 5,
+  "key": "2026-11-19",
+  "dateLabel": "Thursday, November 19, 2026",
+  "shortDate": "Nov 19, 2026",
+  "newsKey": "2026-11-18",
+  "newsDateLabel": "Wednesday, November 18, 2026",
   "seconds": 20,
   "decoySource": "borrowed",
-  "generatedAt": "2026-11-18T18:51:15.336Z",
+  "generatedAt": "2026-11-19T18:59:22.538Z",
   "headlines": [
     {
       "section": "World",
-      "outlet": "The Guardian",
-      "date": "Nov 17",
-      "url": "https://www.theguardian.com/us-news/2026/nov/17/white-house-withdraws-heidi-overton-fda",
-      "lead": "White House withdraws nomination of",
-      "rest": "Heidi Overton to lead FDA",
+      "outlet": "Usnews",
+      "date": "Nov 18",
+      "url": "https://www.usnews.com/news/world/articles/2026-11-18/new-zealand-court-rules-governments-pay-equity-overhaul-violated-womens-rights",
+      "lead": "New Zealand Court Rules Government's",
+      "rest": "Pay Equity Overhaul Violated Women's Rights",
       "decoys": [
-        "Brice Sensabaugh or the Jazz",
-        "Opus 5.5’s value for coding",
-        "included protein sequences at scale"
+        "if High-Speed Rail Grew Too Fast",
+        "New Plans Take Shape In LA",
+        "United Players to Target Under Pochettino"
       ]
     },
     {
       "section": "Science",
-      "outlet": "Johns Hopkins University",
-      "date": "Nov 17",
-      "url": "https://www.jhunewsletter.com/article/2026/11/sga-discusses-catering-for-tabling-event-and-reforms-to-disciplinary-system",
-      "lead": "SGA discusses catering for tabling event",
-      "rest": "and reforms to disciplinary system",
+      "outlet": "Cbs News",
+      "date": "Nov 18",
+      "url": "https://www.cbsnews.com/video/inside-the-world-of-chinas-humanoid-robots/",
+      "lead": "Inside the world",
+      "rest": "of China's humanoid robots",
       "decoys": [
-        "in final midterms Senate race",
-        "says Rubio - The Guardian",
-        "and tighten grip on Yemen"
+        "back old home movies",
+        "not slowing down: Barclays",
+        "not a revolution: Schroders"
       ]
     },
     {
       "section": "Health",
-      "outlet": "Cnbc",
-      "date": "Nov 17",
-      "url": "https://www.cnbc.com/video/2026/11/18/arms-rene-haas-leads-nvidia-ceo-race-but-company-ties-could-be-hurdle.html",
-      "lead": "Arm's Rene Haas leads Nvidia CEO race,",
-      "rest": "but company ties could be a hurdle: Analyst",
+      "outlet": "Google News",
+      "date": "Nov 18",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSF9oV2ROZFhYNWU0SU04ZFJ0WUpJYzBVLUswS211NU9DdFNZV3VrTzVGakhuOGI4RDBMWWNVdFlob0h5STlLM0FNZEpJZmNrN1pFTFVSLWFrbWJSdEZEQjdpU2I4UjJ6SlRybXdSRHBzUi1BcGpncXJSLUc5Q0tRSjljeHR3NDlZMVdGdnBPREFtYkZFcVZLR0lhRkFTUC1SXzYzLUZTemtQOWw0U3dSZVBJSzNVd1gwWmRleUZn?oc=5",
+      "lead": "Minnesota to look at removing non-medical vaccine",
+      "rest": "exemption this legislative session - 5 EYEWITNESS NEWS",
       "decoys": [
-        "over 500 times its budget—now it’s on Netflix",
-        "to reinstate Jensen Huang as CEO, chairman says",
-        "to stun Golden Knights for third straight win"
+        "Study shows arts education benefits students with disabilities",
+        "Your presentation is ready for next time",
+        "finds 'his own peace' after Sandpapergate claims"
       ]
     },
     {
       "section": "World",
-      "outlet": "Wsj",
-      "date": "Nov 17",
-      "url": "https://www.wsj.com/world/middle-east/iran-attacks-kuwait-and-bahrain-further-escalating-fight-over-strait-08f3a436?mod=rss_worldnews",
-      "lead": "Iran Attacks Kuwait and Bahrain,",
-      "rest": "Further Escalating Fight Over Strait",
+      "outlet": "The Guardian",
+      "date": "Nov 18",
+      "url": "https://www.theguardian.com/books/2026/nov/19/hannah-lillith-assadi-paradiso-17-wins-national-book-award",
+      "lead": "Hannah Lillith Assadi wins National book award",
+      "rest": "for ‘visionary’ novel Paradiso 17",
       "decoys": [
-        "We Went Inside His Bunker.",
-        "Ascension Officially Announced For 2027",
-        "Cancer Doctor Would Never Do"
+        "from natural gas begins operations",
+        "by general into Trump meeting",
+        "from Trump-Xi-Putin arms control talks"
       ]
     },
     {
       "section": "Science",
       "outlet": "Digg",
-      "date": "Nov 17",
-      "url": "https://digg.com/ai/xec3e84r",
-      "lead": "TuXinming says Claude’s training diet",
-      "rest": "included protein sequences at scale",
+      "date": "Nov 18",
+      "url": "https://digg.com/ai/n5cwl8mo",
+      "lead": "ValsAI says GPT-6.2 Astra may have delivered",
+      "rest": "the first Lean proof of Smoktunowicz’s Gap Theorem",
       "decoys": [
-        "Heidi Overton to lead FDA",
-        "Opus 5.5’s value for coding",
-        "AI agents for business payments"
+        "the war already if Ukraine didn’t have Starlink",
+        "to a customer-facing AI agent: an enterprise checklist",
+        "and other Chinese robot makers ahead of CES"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Cnbc",
+      "date": "Nov 18",
+      "url": "https://www.cnbc.com/video/2026/11/19/crypto-sell-off-could-reverse-after-anthropic-ipo-ripple-ceo.html",
+      "lead": "Crypto sell-off could reverse",
+      "rest": "after Anthropic IPO: Ripple CEO",
+      "decoys": [
+        "with Ferrari team - Hamilton",
+        "despite AI spending: J&T Express",
+        "for ‘visionary’ novel Paradiso 17"
       ]
     },
     {
       "section": "World",
-      "outlet": "Daily Express Us",
-      "date": "Nov 17",
-      "url": "https://www.the-express.com/news/world-news/219960/outrage-trump-ally-hangs-flag",
-      "lead": "Outrage as Trump ally hangs giant Russian flag",
-      "rest": "in US city to commemorate Kremlin official",
+      "outlet": "Wsj",
+      "date": "Nov 18",
+      "url": "https://www.wsj.com/finance/asian-equities-decline-as-caution-prevails-eaf3c1e9?mod=rss_worldnews",
+      "lead": "Asian Equities Decline",
+      "rest": "as Caution Prevails",
       "decoys": [
-        "in ‘The Symphony of Dance,’ People reports",
-        "to be hired by Michigan, per report",
-        "to becoming House speaker during leadership elections"
-      ]
-    },
-    {
-      "section": "Science",
-      "outlet": "Phys.org",
-      "date": "Nov 17",
-      "url": "https://phys.org/news/2026-11-photon-fluctuations-probe-electron-dynamics.html",
-      "lead": "Photon fluctuations offer new way",
-      "rest": "to probe electron dynamics in crystals",
-      "decoys": [
-        "during 'breathtaking' arrival at Earthshot awards",
-        "despite U.S. chip curbs: Morgan Stanley",
-        "in pitch to APEC business leaders"
+        "After Hours: Here's Why",
+        "to Make Business Simpler",
+        "for Bonkers MAGA Bombshell"
       ]
     }
   ]
