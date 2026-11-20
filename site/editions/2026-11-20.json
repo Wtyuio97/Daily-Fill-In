@@ -1,0 +1,104 @@
+{
+  "number": 6,
+  "key": "2026-11-20",
+  "dateLabel": "Friday, November 20, 2026",
+  "shortDate": "Nov 20, 2026",
+  "newsKey": "2026-11-19",
+  "newsDateLabel": "Thursday, November 19, 2026",
+  "seconds": 20,
+  "decoySource": "borrowed",
+  "generatedAt": "2026-11-20T18:37:06.810Z",
+  "headlines": [
+    {
+      "section": "World",
+      "outlet": "Usnews",
+      "date": "Nov 19",
+      "url": "https://www.usnews.com/news/top-news/articles/2026-11-19/us-army-postpones-detonations-of-degraded-lead-compound-in-iowa",
+      "lead": "US Army Postpones Detonations of",
+      "rest": "Degraded Lead Compound in Iowa",
+      "decoys": [
+        "Help Preserve Your Vision—Here’s How",
+        "Member Hyunjin as Brand Ambassador",
+        "Here’s What You Should Know"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "The New York Times",
+      "date": "Nov 19",
+      "url": "https://www.nytimes.com/2026/11/19/climate/senate-passes-baaja-permitting-bill-energy.html",
+      "lead": "Senate Passes Major Permitting Bill",
+      "rest": "to Speed Up Energy Projects",
+      "decoys": [
+        "and Information on Press Registration",
+        "and Arrow Prop Was Stolen",
+        "and Nine Months 2026 Results"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Cnbc",
+      "date": "Nov 19",
+      "url": "https://www.cnbc.com/video/2026/11/20/lam-research-wafer-fab-spending-2027-ai-demand.html",
+      "lead": "Lam Research sees wafer-fab spending topping $200 billion",
+      "rest": "in 2027 on AI demand",
+      "decoys": [
+        "for machinery trouble, SiliconANGLE reports",
+        "as heavy rain heads southeast",
+        "while attacking gangs in Haiti"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "The Guardian",
+      "date": "Nov 19",
+      "url": "https://www.theguardian.com/us-news/2026/nov/19/trump-mary-peltola-alaska-senate",
+      "lead": "Trump DoJ moves to drop legal challenge",
+      "rest": "to Mary Peltola’s Alaska Senate win",
+      "decoys": [
+        "for three TDs in easy win",
+        "as Willow chip beats classical limits",
+        "as a relapsed alcoholic – podcast"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Benzinga",
+      "date": "Nov 19",
+      "url": "https://www.benzinga.com/markets/equities/26/11/63463595/symbotic-shares-slip-after-hours-executive-proposed-stock-sale",
+      "lead": "Symbotic (SYM) Stock Is Trending After Hours:",
+      "rest": "Here’s What You Should Know",
+      "decoys": [
+        "Member Hyunjin as Brand Ambassador",
+        "Help Preserve Your Vision—Here’s How",
+        "Degraded Lead Compound in Iowa"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Kgw",
+      "date": "Nov 19",
+      "url": "https://www.kgw.com/article/news/local/courts-news/multnomah-county-to-ban-flavored-tobacco-nicotine-starting-2027/283-f1237d61-1e5b-4da3-8f3d-e614ae55c672",
+      "lead": "Multnomah County to begin enforcing flavored",
+      "rest": "tobacco ban next year after court approval",
+      "decoys": [
+        "El Salvador’s President Bukele sends gang-fighting troops",
+        "how genetic changes and drugs alter cells",
+        "'clear and responsive' smartwatch for just $10"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Nbc News",
+      "date": "Nov 19",
+      "url": "https://www.nbcnews.com/video/haitians-celebrate-as-el-salvador-s-bukele-sends-gang-fighting-troops-273862725834",
+      "lead": "Haitians celebrate as",
+      "rest": "El Salvador’s President Bukele sends gang-fighting troops",
+      "decoys": [
+        "‘horrible’ decades-long struggle with mysterious health condition",
+        "'clear and responsive' smartwatch for just $10",
+        "tobacco ban next year after court approval"
+      ]
+    }
+  ]
+}
