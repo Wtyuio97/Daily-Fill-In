@@ -1,103 +1,103 @@
 {
-  "number": 7,
-  "key": "2026-11-21",
-  "dateLabel": "Saturday, November 21, 2026",
-  "shortDate": "Nov 21, 2026",
-  "newsKey": "2026-11-20",
-  "newsDateLabel": "Friday, November 20, 2026",
+  "number": 8,
+  "key": "2026-11-22",
+  "dateLabel": "Sunday, November 22, 2026",
+  "shortDate": "Nov 22, 2026",
+  "newsKey": "2026-11-21",
+  "newsDateLabel": "Saturday, November 21, 2026",
   "seconds": 20,
   "decoySource": "borrowed",
-  "generatedAt": "2026-11-21T17:30:13.439Z",
+  "generatedAt": "2026-11-22T17:49:10.911Z",
   "headlines": [
     {
       "section": "World",
-      "outlet": "Usnews",
-      "date": "Nov 20",
-      "url": "https://www.usnews.com/news/top-news/articles/2026-11-20/army-toxic-detonation-in-iowa-paused-amid-public-outcry-farm-disruption",
-      "lead": "Army Toxic Detonation in Iowa Paused",
-      "rest": "Amid Public Outcry, Farm Disruption",
+      "outlet": "The Washington Post",
+      "date": "Nov 21",
+      "url": "https://www.washingtonpost.com/the-seven/2026/11/21/researchers-tracked-bar-tailed-godwit-called-phil-migrating-6800-miles/",
+      "lead": "Researchers tracked a long-legged bird’s migration.",
+      "rest": "He flew 6,800 miles.",
       "decoys": [
-        "To Fill Bottom-Six Center Role",
-        "for Solo Devs in 2026?",
-        "but There’s a Big Problem"
+        "refugee’s warning to Nevada",
+        "unfaithful New Jersey is",
+        "Horse girls, meet football"
       ]
     },
     {
       "section": "Business",
       "outlet": "Google News",
-      "date": "Nov 20",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ3l4RFFsS191QTB1b2VicGdIRlZESmozTURmT2NKbUFiMU5qVUZIcDdFM0ctV3p6Vmgwc2JoYi16WFh2dGxkTERLTHE5aW9jcmRHaF9uVGd4QXJFcHUyVzRndVRQTmZwcFZZbV9pWlFlNGZVNVNhWWp5MmQ3ckh0ZF8wTGRxeHZ0dUs0ZDN4SktpRVBCc1JqWEZsQVVJOXgzbFdBOUx1V011TEJGNENwbDIxNA?oc=5",
-      "lead": "Bitcoin Falls to More Than Two-Year Low",
-      "rest": "as Global Markets Sink - Bloomberg.com",
+      "date": "Nov 21",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNT2ZkUHhXcVlDSGkyVjZONVotRGdoREg0WG4yQk9VX3FCSjN0TkE0QXY2VHRQWU5Vd3Y2ZFdsbXRYUXkxbzFlOFBDSXJKUlo4SnJkQVpReEs1T2hsLTJpdkliYUdfeHpwUEI2U2tmRFZsSWZ1czVQNWwxdW5rNFk1N0hYYzNkeHFkVDFlS21JbzdVellJNWVnOElmNTZFZWtUQmpwZTJBel9hZi1YNmVscXdRREE4aXY0MGg1QXR1UUXSAcYBQVVfeXFMTTFFdGt0aTZ5YXh5b1pNSmFTeVhHY21FSVJ3VUI1NXBDdk95aDRkNkxodlZIWUQ2V3h4WUdQWXg0cWpYWjdmT0pqTlF4YzRBNWlPQmdTQm1kd0k4RUM3Ny1PMjlET1JMdkFpN3hLV1lQOXdCVUc2ZDRQNjRhU25BTUxNMzRfRVQ1QUhncV9DWjdXbHN0eVd4RUxyZjVPdU5CZDJPbXZnbE9xMjZ1X2NSaUU0aDdwWElvY3FfTHhNSUxUMUNYem1n?oc=5",
+      "lead": "Waymo issues double safety recall days",
+      "rest": "after California bans robotaxis from freeways - Fox Business",
       "decoys": [
-        "in MVP Performance vs. Michigan State",
-        "After Indiana Basketball's Win Over Kentucky",
-        "but There’s a Big Problem"
+        "and blasts 5-year-old boy in face at Detroit home",
+        "as interim OC after starting 4-4. What has changed?",
+        "as Ferraris collide in closing stages - ESPN"
       ]
     },
     {
       "section": "Science",
-      "outlet": "Apnews",
-      "date": "Nov 20",
-      "url": "https://apnews.com/article/anthropic-claude-math-solution-ai-4fe8b69a891f160f9e7f0c85af8c55c8",
-      "lead": "Anthropic worker says AI helped him",
-      "rest": "find proof of the Riemann Hypothesis",
+      "outlet": "Usa Today",
+      "date": "Nov 21",
+      "url": "https://www.usatoday.com/story/tech/2026/11/21/ai-claude-riemann-hypothesis-math-mystery/92901494007/",
+      "lead": "Anthropic mathematician says AI",
+      "rest": "helped solve famous math problem",
       "decoys": [
-        "Santa Clarita sheriff's station, video shows",
-        "you get organized, starting at $50",
-        "18-play drive seal trip to MetLife"
+        "bans help plug the leak",
+        "jet-powered drones by nuclear enemy",
+        "carbon-carbon manufacturing for hypersonic applications"
       ]
     },
     {
       "section": "Entertainment",
-      "outlet": "Daily Express Us",
-      "date": "Nov 20",
-      "url": "https://www.the-express.com/entertainment/celebrity-news/220164/king-charles-queen-camilla-royal-variety-performance-london",
-      "lead": "King Charles and Queen Camilla lead",
-      "rest": "glam arrivals to Royal Variety Performance",
+      "outlet": "Usmagazine",
+      "date": "Nov 21",
+      "url": "https://www.usmagazine.com/celebrity-news/pictures/miley-cyrus-dating-history-timeline-of-her-famous-exes-flings/",
+      "lead": "Miley Cyrus’ Dating History: A Look Back",
+      "rest": "at Her Famous Exes and Marriages",
       "decoys": [
-        "State Senior Night Loss to Oregon",
-        "Netflix Sports Drama Is a Masterpiece",
-        "War For The Throne Officially Unveiled"
+        "With Daughter Dream, Blac Chyna Reacts",
+        "With Building Nukes and Ghosting Trump",
+        "for Blood Sugar? - Verywell Health"
       ]
     },
     {
       "section": "Health",
-      "outlet": "Fox News",
-      "date": "Nov 20",
-      "url": "https://www.foxnews.com/health/new-drug-combo-shrinks-tumors-most-patients-aggressive-cancer-type",
-      "lead": "New drug combo shrinks tumors",
-      "rest": "in most patients facing aggressive cancer type",
+      "outlet": "Nbc News",
+      "date": "Nov 21",
+      "url": "https://www.nbcnews.com/nightly-news/video/more-women-using-ivf-to-lower-their-kids-risk-of-breast-cancer-273967685526",
+      "lead": "More women using IVF",
+      "rest": "to lower their kids’ risk of breast cancer",
       "decoys": [
-        "and is this year's disruption still affecting players?",
-        "and police department after crash leaves him hospitalized",
-        "to down Kings - Silver Screen and Roll"
+        "as Ferraris collide in closing stages - ESPN",
+        "after C-section - Sat, 21 Nov 2026 PST",
+        "for trade and energy talks, officials say"
       ]
     },
     {
       "section": "Politics",
-      "outlet": "Cnn",
-      "date": "Nov 20",
-      "url": "https://www.cnn.com/2026/11/20/politics/doj-alaska-investigation-dems-peltola",
-      "lead": "DOJ Alaska Senate race investigation shifts focus",
-      "rest": "toward Peltola campaign and Democratic operatives",
+      "outlet": "The New York Times",
+      "date": "Nov 21",
+      "url": "https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html",
+      "lead": "China’s Spies Set Sights on A.I.",
+      "rest": "Chips Years Before Nvidia Scandal",
       "decoys": [
-        "after Rikers Island shut down plan",
-        "as Seneca earned state title berth",
-        "for US Space Force from California"
+        "Riemann Hypothesis proof checks out",
+        "Gold 'TrumpCare' Card Without Comment",
+        "is an American hero"
       ]
     },
     {
       "section": "World",
-      "outlet": "The Guardian",
-      "date": "Nov 20",
-      "url": "https://www.theguardian.com/us-news/2026/nov/20/tillis-republican-senator-trump-cyber-nominee",
-      "lead": "Republican senator blocks Trump cyber nominee",
-      "rest": "over January 6 denial",
+      "outlet": "Los Angeles Times",
+      "date": "Nov 21",
+      "url": "https://www.latimes.com/world-nation/story/2026-11-21/el-chapo-isidro-rose-from-small-time-trafficker-to-drug-lord",
+      "lead": "Mexican cartel boss 'El Chapo Isidro' rose",
+      "rest": "from small-time trafficker to drug lord",
       "decoys": [
-        "at Amazon, Gizmodo reports",
-        "into an on-demand billboard",
-        "to No. 13 Oregon"
+        "at other superstars with stat-padding comments",
+        "for collision with Hamilton, Autosport reports",
+        "for third time in 4 years"
       ]
     }
   ]
