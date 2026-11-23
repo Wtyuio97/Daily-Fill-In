@@ -1,103 +1,90 @@
 {
-  "number": 8,
-  "key": "2026-11-22",
-  "dateLabel": "Sunday, November 22, 2026",
-  "shortDate": "Nov 22, 2026",
-  "newsKey": "2026-11-21",
-  "newsDateLabel": "Saturday, November 21, 2026",
+  "number": 9,
+  "key": "2026-11-23",
+  "dateLabel": "Monday, November 23, 2026",
+  "shortDate": "Nov 23, 2026",
+  "newsKey": "2026-11-22",
+  "newsDateLabel": "Sunday, November 22, 2026",
   "seconds": 20,
   "decoySource": "borrowed",
-  "generatedAt": "2026-11-22T17:49:10.911Z",
+  "generatedAt": "2026-11-23T22:02:33.731Z",
   "headlines": [
     {
       "section": "World",
-      "outlet": "The Washington Post",
-      "date": "Nov 21",
-      "url": "https://www.washingtonpost.com/the-seven/2026/11/21/researchers-tracked-bar-tailed-godwit-called-phil-migrating-6800-miles/",
-      "lead": "Researchers tracked a long-legged bird’s migration.",
-      "rest": "He flew 6,800 miles.",
+      "outlet": "Wsj",
+      "date": "Nov 22",
+      "url": "https://www.wsj.com/finance/stocks/asian-regulators-step-up-efforts-to-calm-ai-driven-market-turmoil-95ea6cf8?mod=rss_worldnews",
+      "lead": "Asian Regulators Step Up Efforts",
+      "rest": "to Calm AI-Driven Market Turmoil",
       "decoys": [
-        "refugee’s warning to Nevada",
-        "unfaithful New Jersey is",
-        "Horse girls, meet football"
-      ]
-    },
-    {
-      "section": "Business",
-      "outlet": "Google News",
-      "date": "Nov 21",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNT2ZkUHhXcVlDSGkyVjZONVotRGdoREg0WG4yQk9VX3FCSjN0TkE0QXY2VHRQWU5Vd3Y2ZFdsbXRYUXkxbzFlOFBDSXJKUlo4SnJkQVpReEs1T2hsLTJpdkliYUdfeHpwUEI2U2tmRFZsSWZ1czVQNWwxdW5rNFk1N0hYYzNkeHFkVDFlS21JbzdVellJNWVnOElmNTZFZWtUQmpwZTJBel9hZi1YNmVscXdRREE4aXY0MGg1QXR1UUXSAcYBQVVfeXFMTTFFdGt0aTZ5YXh5b1pNSmFTeVhHY21FSVJ3VUI1NXBDdk95aDRkNkxodlZIWUQ2V3h4WUdQWXg0cWpYWjdmT0pqTlF4YzRBNWlPQmdTQm1kd0k4RUM3Ny1PMjlET1JMdkFpN3hLV1lQOXdCVUc2ZDRQNjRhU25BTUxNMzRfRVQ1QUhncV9DWjdXbHN0eVd4RUxyZjVPdU5CZDJPbXZnbE9xMjZ1X2NSaUU0aDdwWElvY3FfTHhNSUxUMUNYem1n?oc=5",
-      "lead": "Waymo issues double safety recall days",
-      "rest": "after California bans robotaxis from freeways - Fox Business",
-      "decoys": [
-        "and blasts 5-year-old boy in face at Detroit home",
-        "as interim OC after starting 4-4. What has changed?",
-        "as Ferraris collide in closing stages - ESPN"
+        "for Your Next Winter Escape",
+        "on Russian Ships Near Libya",
+        "on Colder Weather, Low Storage"
       ]
     },
     {
       "section": "Science",
-      "outlet": "Usa Today",
-      "date": "Nov 21",
-      "url": "https://www.usatoday.com/story/tech/2026/11/21/ai-claude-riemann-hypothesis-math-mystery/92901494007/",
-      "lead": "Anthropic mathematician says AI",
-      "rest": "helped solve famous math problem",
+      "outlet": "Interesting Engineering",
+      "date": "Nov 22",
+      "url": "https://interestingengineering.com/science/another-planet-hiding-beyond-neptune",
+      "lead": "Is there another planet hiding beyond Neptune?",
+      "rest": "Scientists unveil new clues about mysterious planet X2",
       "decoys": [
-        "bans help plug the leak",
-        "jet-powered drones by nuclear enemy",
-        "carbon-carbon manufacturing for hypersonic applications"
-      ]
-    },
-    {
-      "section": "Entertainment",
-      "outlet": "Usmagazine",
-      "date": "Nov 21",
-      "url": "https://www.usmagazine.com/celebrity-news/pictures/miley-cyrus-dating-history-timeline-of-her-famous-exes-flings/",
-      "lead": "Miley Cyrus’ Dating History: A Look Back",
-      "rest": "at Her Famous Exes and Marriages",
-      "decoys": [
-        "With Daughter Dream, Blac Chyna Reacts",
-        "With Building Nukes and Ghosting Trump",
-        "for Blood Sugar? - Verywell Health"
-      ]
-    },
-    {
-      "section": "Health",
-      "outlet": "Nbc News",
-      "date": "Nov 21",
-      "url": "https://www.nbcnews.com/nightly-news/video/more-women-using-ivf-to-lower-their-kids-risk-of-breast-cancer-273967685526",
-      "lead": "More women using IVF",
-      "rest": "to lower their kids’ risk of breast cancer",
-      "decoys": [
-        "as Ferraris collide in closing stages - ESPN",
-        "after C-section - Sat, 21 Nov 2026 PST",
-        "for trade and energy talks, officials say"
-      ]
-    },
-    {
-      "section": "Politics",
-      "outlet": "The New York Times",
-      "date": "Nov 21",
-      "url": "https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html",
-      "lead": "China’s Spies Set Sights on A.I.",
-      "rest": "Chips Years Before Nvidia Scandal",
-      "decoys": [
-        "Riemann Hypothesis proof checks out",
-        "Gold 'TrumpCare' Card Without Comment",
-        "is an American hero"
+        "between typing a URL and seeing a page",
+        "weeks threatening Nato’s key surveillance, spy chiefs warn",
+        "best F1 wins. Las Vegas belongs on it"
       ]
     },
     {
       "section": "World",
-      "outlet": "Los Angeles Times",
-      "date": "Nov 21",
-      "url": "https://www.latimes.com/world-nation/story/2026-11-21/el-chapo-isidro-rose-from-small-time-trafficker-to-drug-lord",
-      "lead": "Mexican cartel boss 'El Chapo Isidro' rose",
-      "rest": "from small-time trafficker to drug lord",
+      "outlet": "Fox News",
+      "date": "Nov 22",
+      "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
+      "lead": "Russian warship sinks off Libya",
+      "rest": "as suspected Ukrainian strikes take war beyond Black Sea",
       "decoys": [
-        "at other superstars with stat-padding comments",
-        "for collision with Hamilton, Autosport reports",
-        "for third time in 4 years"
+        "and sacrifice of unsung heroes — the caregivers",
+        "to launch 2028 campaigns sooner rather than later",
+        "for prostate cancer screening are recommended by NICE"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Cbs News",
+      "date": "Nov 22",
+      "url": "https://www.cbsnews.com/video/kate-middleton-shares-cancer-journey-details-surprise-documentary/",
+      "lead": "Kate Middleton shares cancer journey details",
+      "rest": "in surprise documentary",
+      "decoys": [
+        "to watch for",
+        "in plain JavaScript",
+        "with first in June"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "The New York Times",
+      "date": "Nov 22",
+      "url": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
+      "lead": "How Homeowners Are",
+      "rest": "Powering Vietnam’s E-Bike Surge",
+      "decoys": [
+        "Acting in Japanese.",
+        "Finding New Forms",
+        "Those Gas Station Drugs?"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Upi",
+      "date": "Nov 22",
+      "url": "https://www.upi.com/Top_News/World-News/2026/11/22/indonesia-candy-factory-fire/1481795402859/",
+      "lead": "Dozens missing as rescuers search",
+      "rest": "burned Indonesian candy factory fire",
+      "decoys": [
+        "five engines, one product line",
+        "reset mean for the UK?",
+        "needs more than one man"
       ]
     }
   ]

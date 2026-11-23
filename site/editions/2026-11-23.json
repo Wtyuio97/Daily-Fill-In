@@ -1,0 +1,91 @@
+{
+  "number": 9,
+  "key": "2026-11-23",
+  "dateLabel": "Monday, November 23, 2026",
+  "shortDate": "Nov 23, 2026",
+  "newsKey": "2026-11-22",
+  "newsDateLabel": "Sunday, November 22, 2026",
+  "seconds": 20,
+  "decoySource": "borrowed",
+  "generatedAt": "2026-11-23T22:02:33.731Z",
+  "headlines": [
+    {
+      "section": "World",
+      "outlet": "Wsj",
+      "date": "Nov 22",
+      "url": "https://www.wsj.com/finance/stocks/asian-regulators-step-up-efforts-to-calm-ai-driven-market-turmoil-95ea6cf8?mod=rss_worldnews",
+      "lead": "Asian Regulators Step Up Efforts",
+      "rest": "to Calm AI-Driven Market Turmoil",
+      "decoys": [
+        "for Your Next Winter Escape",
+        "on Russian Ships Near Libya",
+        "on Colder Weather, Low Storage"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Interesting Engineering",
+      "date": "Nov 22",
+      "url": "https://interestingengineering.com/science/another-planet-hiding-beyond-neptune",
+      "lead": "Is there another planet hiding beyond Neptune?",
+      "rest": "Scientists unveil new clues about mysterious planet X2",
+      "decoys": [
+        "between typing a URL and seeing a page",
+        "weeks threatening Nato’s key surveillance, spy chiefs warn",
+        "best F1 wins. Las Vegas belongs on it"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Fox News",
+      "date": "Nov 22",
+      "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
+      "lead": "Russian warship sinks off Libya",
+      "rest": "as suspected Ukrainian strikes take war beyond Black Sea",
+      "decoys": [
+        "and sacrifice of unsung heroes — the caregivers",
+        "to launch 2028 campaigns sooner rather than later",
+        "for prostate cancer screening are recommended by NICE"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Cbs News",
+      "date": "Nov 22",
+      "url": "https://www.cbsnews.com/video/kate-middleton-shares-cancer-journey-details-surprise-documentary/",
+      "lead": "Kate Middleton shares cancer journey details",
+      "rest": "in surprise documentary",
+      "decoys": [
+        "to watch for",
+        "in plain JavaScript",
+        "with first in June"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "The New York Times",
+      "date": "Nov 22",
+      "url": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
+      "lead": "How Homeowners Are",
+      "rest": "Powering Vietnam’s E-Bike Surge",
+      "decoys": [
+        "Acting in Japanese.",
+        "Finding New Forms",
+        "Those Gas Station Drugs?"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Upi",
+      "date": "Nov 22",
+      "url": "https://www.upi.com/Top_News/World-News/2026/11/22/indonesia-candy-factory-fire/1481795402859/",
+      "lead": "Dozens missing as rescuers search",
+      "rest": "burned Indonesian candy factory fire",
+      "decoys": [
+        "five engines, one product line",
+        "reset mean for the UK?",
+        "needs more than one man"
+      ]
+    }
+  ]
+}
