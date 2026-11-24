@@ -1,0 +1,104 @@
+{
+  "number": 10,
+  "key": "2026-11-24",
+  "dateLabel": "Tuesday, November 24, 2026",
+  "shortDate": "Nov 24, 2026",
+  "newsKey": "2026-11-23",
+  "newsDateLabel": "Monday, November 23, 2026",
+  "seconds": 20,
+  "decoySource": "borrowed",
+  "generatedAt": "2026-11-24T20:39:55.072Z",
+  "headlines": [
+    {
+      "section": "World",
+      "outlet": "Wsj",
+      "date": "Nov 23",
+      "url": "https://www.wsj.com/business/then-and-now-see-how-nvidia-and-the-administration-pivoted-on-huang-d49b1c1b?mod=rss_worldnews",
+      "lead": "Then and Now: See How Nvidia",
+      "rest": "and the Administration Pivoted on Huang",
+      "decoys": [
+        "as Comcast Sets a Traffic Record",
+        "Into Race Against Schumer - Newser",
+        "on Problem Gambling over Kalshi membership"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Google News",
+      "date": "Nov 23",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMDhVWmdodUpkWlJsZGFULVVQTnhpWjFWRVZwTlY5YXdGRXpDbnFYYWRMazR3aEhQTE5TN1lEOE5EWkdtcDhqbmRyUmpBajFuc2pQU1dYVnAxeTlSbnZVMDZ6Rlp1UUdhZlM5czJNNHNIM0lvcWtuQWw2X0RHcm43am0zUTVVMWoxR2ZTRHdxMFlVcldFb3c?oc=5",
+      "lead": "Van Hollen Brings Nvidia",
+      "rest": "Into Race Against Schumer - Newser",
+      "decoys": [
+        "and the Administration Pivoted on Huang",
+        "as Comcast Sets a Traffic Record",
+        "to Catch Test Cheaters Using AI"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Skynew",
+      "date": "Nov 23",
+      "url": "https://news.sky.com/story/gisele-pelicot-deeply-shocked-after-nude-photos-used-to-promote-book-13615849",
+      "lead": "Pelicot 'humiliated' after nude photos used",
+      "rest": "to promote book",
+      "decoys": [
+        "in parking charges",
+        "in dull win",
+        "at Ohio St."
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Cnn",
+      "date": "Nov 23",
+      "url": "https://www.cnn.com/2026/11/23/business/robot-tour-guide-operated-by-people-with-disabilities-spc",
+      "lead": "This cute 9-inch robot tour guide",
+      "rest": "is operated by people with disabilities",
+      "decoys": [
+        "diary reveals torment, visions of Devil",
+        "‘was a joke,’ Anthropic mathematician says",
+        "Nvidia reinstates Huang as its CEO"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Miami Herald",
+      "date": "Nov 23",
+      "url": "https://www.miamiherald.com/news/nation-world/world/americas/haiti/article318222736.html",
+      "lead": "BAYO block party, Grand Theft Auto",
+      "rest": "VI celebrate Haitian culture, pride in Miami",
+      "decoys": [
+        "Expert slams Nvidia's governance as Jensen returns",
+        "rob you of your desire to exercise",
+        "Big Tech’s global revenue on the line"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Cbs News",
+      "date": "Nov 23",
+      "url": "https://www.cbsnews.com/video/anthropic-touts-potential-for-ai-led-medical-advancements/",
+      "lead": "Anthropic touts potential",
+      "rest": "for AI-led medical advancements",
+      "decoys": [
+        "with mom and dad",
+        "from U.S. in demining",
+        "despite lead dust fears"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Digg",
+      "date": "Nov 23",
+      "url": "https://digg.com/ai/3jp13mqz",
+      "lead": "Trapit Bansal says he left Meta",
+      "rest": "and is “starting from scratch again”",
+      "decoys": [
+        "under a single app in December",
+        "for Club Brugge after 16 years",
+        "on youth camp linked to war"
+      ]
+    }
+  ]
+}

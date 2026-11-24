@@ -1,90 +1,103 @@
 {
-  "number": 9,
-  "key": "2026-11-23",
-  "dateLabel": "Monday, November 23, 2026",
-  "shortDate": "Nov 23, 2026",
-  "newsKey": "2026-11-22",
-  "newsDateLabel": "Sunday, November 22, 2026",
+  "number": 10,
+  "key": "2026-11-24",
+  "dateLabel": "Tuesday, November 24, 2026",
+  "shortDate": "Nov 24, 2026",
+  "newsKey": "2026-11-23",
+  "newsDateLabel": "Monday, November 23, 2026",
   "seconds": 20,
   "decoySource": "borrowed",
-  "generatedAt": "2026-11-23T22:02:33.731Z",
+  "generatedAt": "2026-11-24T20:39:55.072Z",
   "headlines": [
     {
       "section": "World",
       "outlet": "Wsj",
-      "date": "Nov 22",
-      "url": "https://www.wsj.com/finance/stocks/asian-regulators-step-up-efforts-to-calm-ai-driven-market-turmoil-95ea6cf8?mod=rss_worldnews",
-      "lead": "Asian Regulators Step Up Efforts",
-      "rest": "to Calm AI-Driven Market Turmoil",
+      "date": "Nov 23",
+      "url": "https://www.wsj.com/business/then-and-now-see-how-nvidia-and-the-administration-pivoted-on-huang-d49b1c1b?mod=rss_worldnews",
+      "lead": "Then and Now: See How Nvidia",
+      "rest": "and the Administration Pivoted on Huang",
       "decoys": [
-        "for Your Next Winter Escape",
-        "on Russian Ships Near Libya",
-        "on Colder Weather, Low Storage"
+        "as Comcast Sets a Traffic Record",
+        "Into Race Against Schumer - Newser",
+        "on Problem Gambling over Kalshi membership"
       ]
     },
     {
       "section": "Science",
-      "outlet": "Interesting Engineering",
-      "date": "Nov 22",
-      "url": "https://interestingengineering.com/science/another-planet-hiding-beyond-neptune",
-      "lead": "Is there another planet hiding beyond Neptune?",
-      "rest": "Scientists unveil new clues about mysterious planet X2",
+      "outlet": "Google News",
+      "date": "Nov 23",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMDhVWmdodUpkWlJsZGFULVVQTnhpWjFWRVZwTlY5YXdGRXpDbnFYYWRMazR3aEhQTE5TN1lEOE5EWkdtcDhqbmRyUmpBajFuc2pQU1dYVnAxeTlSbnZVMDZ6Rlp1UUdhZlM5czJNNHNIM0lvcWtuQWw2X0RHcm43am0zUTVVMWoxR2ZTRHdxMFlVcldFb3c?oc=5",
+      "lead": "Van Hollen Brings Nvidia",
+      "rest": "Into Race Against Schumer - Newser",
       "decoys": [
-        "between typing a URL and seeing a page",
-        "weeks threatening Nato’s key surveillance, spy chiefs warn",
-        "best F1 wins. Las Vegas belongs on it"
+        "and the Administration Pivoted on Huang",
+        "as Comcast Sets a Traffic Record",
+        "to Catch Test Cheaters Using AI"
       ]
     },
     {
       "section": "World",
-      "outlet": "Fox News",
-      "date": "Nov 22",
-      "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea",
-      "lead": "Russian warship sinks off Libya",
-      "rest": "as suspected Ukrainian strikes take war beyond Black Sea",
+      "outlet": "Skynew",
+      "date": "Nov 23",
+      "url": "https://news.sky.com/story/gisele-pelicot-deeply-shocked-after-nude-photos-used-to-promote-book-13615849",
+      "lead": "Pelicot 'humiliated' after nude photos used",
+      "rest": "to promote book",
       "decoys": [
-        "and sacrifice of unsung heroes — the caregivers",
-        "to launch 2028 campaigns sooner rather than later",
-        "for prostate cancer screening are recommended by NICE"
+        "in parking charges",
+        "in dull win",
+        "at Ohio St."
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Cnn",
+      "date": "Nov 23",
+      "url": "https://www.cnn.com/2026/11/23/business/robot-tour-guide-operated-by-people-with-disabilities-spc",
+      "lead": "This cute 9-inch robot tour guide",
+      "rest": "is operated by people with disabilities",
+      "decoys": [
+        "diary reveals torment, visions of Devil",
+        "‘was a joke,’ Anthropic mathematician says",
+        "Nvidia reinstates Huang as its CEO"
       ]
     },
     {
       "section": "World",
+      "outlet": "Miami Herald",
+      "date": "Nov 23",
+      "url": "https://www.miamiherald.com/news/nation-world/world/americas/haiti/article318222736.html",
+      "lead": "BAYO block party, Grand Theft Auto",
+      "rest": "VI celebrate Haitian culture, pride in Miami",
+      "decoys": [
+        "Expert slams Nvidia's governance as Jensen returns",
+        "rob you of your desire to exercise",
+        "Big Tech’s global revenue on the line"
+      ]
+    },
+    {
+      "section": "Science",
       "outlet": "Cbs News",
-      "date": "Nov 22",
-      "url": "https://www.cbsnews.com/video/kate-middleton-shares-cancer-journey-details-surprise-documentary/",
-      "lead": "Kate Middleton shares cancer journey details",
-      "rest": "in surprise documentary",
+      "date": "Nov 23",
+      "url": "https://www.cbsnews.com/video/anthropic-touts-potential-for-ai-led-medical-advancements/",
+      "lead": "Anthropic touts potential",
+      "rest": "for AI-led medical advancements",
       "decoys": [
-        "to watch for",
-        "in plain JavaScript",
-        "with first in June"
+        "with mom and dad",
+        "from U.S. in demining",
+        "despite lead dust fears"
       ]
     },
     {
-      "section": "World",
-      "outlet": "The New York Times",
-      "date": "Nov 22",
-      "url": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
-      "lead": "How Homeowners Are",
-      "rest": "Powering Vietnam’s E-Bike Surge",
+      "section": "Science",
+      "outlet": "Digg",
+      "date": "Nov 23",
+      "url": "https://digg.com/ai/3jp13mqz",
+      "lead": "Trapit Bansal says he left Meta",
+      "rest": "and is “starting from scratch again”",
       "decoys": [
-        "Acting in Japanese.",
-        "Finding New Forms",
-        "Those Gas Station Drugs?"
-      ]
-    },
-    {
-      "section": "World",
-      "outlet": "Upi",
-      "date": "Nov 22",
-      "url": "https://www.upi.com/Top_News/World-News/2026/11/22/indonesia-candy-factory-fire/1481795402859/",
-      "lead": "Dozens missing as rescuers search",
-      "rest": "burned Indonesian candy factory fire",
-      "decoys": [
-        "five engines, one product line",
-        "reset mean for the UK?",
-        "needs more than one man"
+        "under a single app in December",
+        "for Club Brugge after 16 years",
+        "on youth camp linked to war"
       ]
     }
   ]
