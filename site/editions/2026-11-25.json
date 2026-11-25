@@ -1,0 +1,104 @@
+{
+  "number": 11,
+  "key": "2026-11-25",
+  "dateLabel": "Wednesday, November 25, 2026",
+  "shortDate": "Nov 25, 2026",
+  "newsKey": "2026-11-24",
+  "newsDateLabel": "Tuesday, November 24, 2026",
+  "seconds": 20,
+  "decoySource": "borrowed",
+  "generatedAt": "2026-11-25T19:56:33.784Z",
+  "headlines": [
+    {
+      "section": "World",
+      "outlet": "The Guardian",
+      "date": "Nov 24",
+      "url": "https://www.theguardian.com/world/2026/nov/25/australia-solomon-islands-treaty-blow-to-china-pacific-influence",
+      "lead": "Australia’s security pact with Solomon Islands a blow",
+      "rest": "to China’s influence in the Pacific",
+      "decoys": [
+        "in dominant win over Kansas State",
+        "and guidelines of Coop Pank AS",
+        "as need grows ahead of holidays"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Google News",
+      "date": "Nov 24",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSlNjTzlUYTRGZGlCcktaSlZuSno0Nm8wQk10bUstR3VtUEJLeGdaM3BaMDN3RHBHNGlPcW5vTWRuTzRHSUpNeEMyd0l4T3ZiNFhDdkltZ1EzbkpJdWNjTGs1YV9zS3pKODdlaUl2T0YtVjdBNE5zVU1zV2pxdm9SM3FnTmlfYlFuNUxIQkE3Rjg?oc=5",
+      "lead": "Maybe Dark Energy Isn't so Inexplicable",
+      "rest": "After All - Universe Today",
+      "decoys": [
+        "After Ban From CA Freeways",
+        "in the Pacific Suffer Setback",
+        "to Watch Heading Into Wednesday"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Wsj",
+      "date": "Nov 24",
+      "url": "https://www.wsj.com/world/asia/chinas-military-ambitions-in-the-pacific-suffer-setback-ef5a2d30?mod=rss_worldnews",
+      "lead": "China’s Military Ambitions",
+      "rest": "in the Pacific Suffer Setback",
+      "decoys": [
+        "in a Blow to China",
+        "to Watch Heading Into Wednesday",
+        "After All - Universe Today"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Nbc News",
+      "date": "Nov 24",
+      "url": "https://www.nbcnews.com/video/lab-says-humanoid-robot-uses-living-human-neurons-to-help-think-274135621796",
+      "lead": "Lab says humanoid robot uses",
+      "rest": "living human neurons to help think",
+      "decoys": [
+        "warning children's lives are at risk",
+        "giving England an extra dimension",
+        "ailing primary care system"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Fox News",
+      "date": "Nov 24",
+      "url": "https://www.foxnews.com/world/trump-administration-weighs-targeting-irans-top-regime-leaders-bid-end-war-report",
+      "lead": "Trump administration weighs targeting Iran's top regime leaders",
+      "rest": "in bid to end war: report",
+      "decoys": [
+        "to China’s influence in the Pacific",
+        "to support Iowa ammunition plant response",
+        "in Players Era 16 first round"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Digg",
+      "date": "Nov 24",
+      "url": "https://digg.com/ai/rwz7gy1s",
+      "lead": "OpenAI preprint claims square matrix",
+      "rest": "multiplication’s exponent is exactly 2.25",
+      "decoys": [
+        "confidence 82 vs 82 expected",
+        "prisoners remain behind Israeli bars",
+        "It can’t replace the village"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Time",
+      "date": "Nov 24",
+      "url": "https://time.com/article/2026/11/25/focker-in-law-review-ariana-grande/",
+      "lead": "Ariana Grande Is the Saving Grace",
+      "rest": "of the Woefully Unfunny Focker In-Law",
+      "decoys": [
+        "say Nvidia’s Vera hardware has landed",
+        "Masterpiece Is An S-Tier Fantasy Series",
+        "Issuer Rating to AS Coop Pank"
+      ]
+    }
+  ]
+}

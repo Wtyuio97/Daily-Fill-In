@@ -1,103 +1,103 @@
 {
-  "number": 10,
-  "key": "2026-11-24",
-  "dateLabel": "Tuesday, November 24, 2026",
-  "shortDate": "Nov 24, 2026",
-  "newsKey": "2026-11-23",
-  "newsDateLabel": "Monday, November 23, 2026",
+  "number": 11,
+  "key": "2026-11-25",
+  "dateLabel": "Wednesday, November 25, 2026",
+  "shortDate": "Nov 25, 2026",
+  "newsKey": "2026-11-24",
+  "newsDateLabel": "Tuesday, November 24, 2026",
   "seconds": 20,
   "decoySource": "borrowed",
-  "generatedAt": "2026-11-24T20:39:55.072Z",
+  "generatedAt": "2026-11-25T19:56:33.784Z",
   "headlines": [
     {
       "section": "World",
-      "outlet": "Wsj",
-      "date": "Nov 23",
-      "url": "https://www.wsj.com/business/then-and-now-see-how-nvidia-and-the-administration-pivoted-on-huang-d49b1c1b?mod=rss_worldnews",
-      "lead": "Then and Now: See How Nvidia",
-      "rest": "and the Administration Pivoted on Huang",
+      "outlet": "The Guardian",
+      "date": "Nov 24",
+      "url": "https://www.theguardian.com/world/2026/nov/25/australia-solomon-islands-treaty-blow-to-china-pacific-influence",
+      "lead": "Australia’s security pact with Solomon Islands a blow",
+      "rest": "to China’s influence in the Pacific",
       "decoys": [
-        "as Comcast Sets a Traffic Record",
-        "Into Race Against Schumer - Newser",
-        "on Problem Gambling over Kalshi membership"
+        "in dominant win over Kansas State",
+        "and guidelines of Coop Pank AS",
+        "as need grows ahead of holidays"
       ]
     },
     {
       "section": "Science",
       "outlet": "Google News",
-      "date": "Nov 23",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMDhVWmdodUpkWlJsZGFULVVQTnhpWjFWRVZwTlY5YXdGRXpDbnFYYWRMazR3aEhQTE5TN1lEOE5EWkdtcDhqbmRyUmpBajFuc2pQU1dYVnAxeTlSbnZVMDZ6Rlp1UUdhZlM5czJNNHNIM0lvcWtuQWw2X0RHcm43am0zUTVVMWoxR2ZTRHdxMFlVcldFb3c?oc=5",
-      "lead": "Van Hollen Brings Nvidia",
-      "rest": "Into Race Against Schumer - Newser",
+      "date": "Nov 24",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSlNjTzlUYTRGZGlCcktaSlZuSno0Nm8wQk10bUstR3VtUEJLeGdaM3BaMDN3RHBHNGlPcW5vTWRuTzRHSUpNeEMyd0l4T3ZiNFhDdkltZ1EzbkpJdWNjTGs1YV9zS3pKODdlaUl2T0YtVjdBNE5zVU1zV2pxdm9SM3FnTmlfYlFuNUxIQkE3Rjg?oc=5",
+      "lead": "Maybe Dark Energy Isn't so Inexplicable",
+      "rest": "After All - Universe Today",
       "decoys": [
-        "and the Administration Pivoted on Huang",
-        "as Comcast Sets a Traffic Record",
-        "to Catch Test Cheaters Using AI"
+        "After Ban From CA Freeways",
+        "in the Pacific Suffer Setback",
+        "to Watch Heading Into Wednesday"
       ]
     },
     {
       "section": "World",
-      "outlet": "Skynew",
-      "date": "Nov 23",
-      "url": "https://news.sky.com/story/gisele-pelicot-deeply-shocked-after-nude-photos-used-to-promote-book-13615849",
-      "lead": "Pelicot 'humiliated' after nude photos used",
-      "rest": "to promote book",
+      "outlet": "Wsj",
+      "date": "Nov 24",
+      "url": "https://www.wsj.com/world/asia/chinas-military-ambitions-in-the-pacific-suffer-setback-ef5a2d30?mod=rss_worldnews",
+      "lead": "China’s Military Ambitions",
+      "rest": "in the Pacific Suffer Setback",
       "decoys": [
-        "in parking charges",
-        "in dull win",
-        "at Ohio St."
+        "in a Blow to China",
+        "to Watch Heading Into Wednesday",
+        "After All - Universe Today"
       ]
     },
     {
       "section": "Science",
-      "outlet": "Cnn",
-      "date": "Nov 23",
-      "url": "https://www.cnn.com/2026/11/23/business/robot-tour-guide-operated-by-people-with-disabilities-spc",
-      "lead": "This cute 9-inch robot tour guide",
-      "rest": "is operated by people with disabilities",
+      "outlet": "Nbc News",
+      "date": "Nov 24",
+      "url": "https://www.nbcnews.com/video/lab-says-humanoid-robot-uses-living-human-neurons-to-help-think-274135621796",
+      "lead": "Lab says humanoid robot uses",
+      "rest": "living human neurons to help think",
       "decoys": [
-        "diary reveals torment, visions of Devil",
-        "‘was a joke,’ Anthropic mathematician says",
-        "Nvidia reinstates Huang as its CEO"
+        "warning children's lives are at risk",
+        "giving England an extra dimension",
+        "ailing primary care system"
       ]
     },
     {
       "section": "World",
-      "outlet": "Miami Herald",
-      "date": "Nov 23",
-      "url": "https://www.miamiherald.com/news/nation-world/world/americas/haiti/article318222736.html",
-      "lead": "BAYO block party, Grand Theft Auto",
-      "rest": "VI celebrate Haitian culture, pride in Miami",
+      "outlet": "Fox News",
+      "date": "Nov 24",
+      "url": "https://www.foxnews.com/world/trump-administration-weighs-targeting-irans-top-regime-leaders-bid-end-war-report",
+      "lead": "Trump administration weighs targeting Iran's top regime leaders",
+      "rest": "in bid to end war: report",
       "decoys": [
-        "Expert slams Nvidia's governance as Jensen returns",
-        "rob you of your desire to exercise",
-        "Big Tech’s global revenue on the line"
-      ]
-    },
-    {
-      "section": "Science",
-      "outlet": "Cbs News",
-      "date": "Nov 23",
-      "url": "https://www.cbsnews.com/video/anthropic-touts-potential-for-ai-led-medical-advancements/",
-      "lead": "Anthropic touts potential",
-      "rest": "for AI-led medical advancements",
-      "decoys": [
-        "with mom and dad",
-        "from U.S. in demining",
-        "despite lead dust fears"
+        "to China’s influence in the Pacific",
+        "to support Iowa ammunition plant response",
+        "in Players Era 16 first round"
       ]
     },
     {
       "section": "Science",
       "outlet": "Digg",
-      "date": "Nov 23",
-      "url": "https://digg.com/ai/3jp13mqz",
-      "lead": "Trapit Bansal says he left Meta",
-      "rest": "and is “starting from scratch again”",
+      "date": "Nov 24",
+      "url": "https://digg.com/ai/rwz7gy1s",
+      "lead": "OpenAI preprint claims square matrix",
+      "rest": "multiplication’s exponent is exactly 2.25",
       "decoys": [
-        "under a single app in December",
-        "for Club Brugge after 16 years",
-        "on youth camp linked to war"
+        "confidence 82 vs 82 expected",
+        "prisoners remain behind Israeli bars",
+        "It can’t replace the village"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Time",
+      "date": "Nov 24",
+      "url": "https://time.com/article/2026/11/25/focker-in-law-review-ariana-grande/",
+      "lead": "Ariana Grande Is the Saving Grace",
+      "rest": "of the Woefully Unfunny Focker In-Law",
+      "decoys": [
+        "say Nvidia’s Vera hardware has landed",
+        "Masterpiece Is An S-Tier Fantasy Series",
+        "Issuer Rating to AS Coop Pank"
       ]
     }
   ]
