@@ -1,0 +1,104 @@
+{
+  "number": 12,
+  "key": "2026-11-26",
+  "dateLabel": "Thursday, November 26, 2026",
+  "shortDate": "Nov 26, 2026",
+  "newsKey": "2026-11-25",
+  "newsDateLabel": "Wednesday, November 25, 2026",
+  "seconds": 20,
+  "decoySource": "borrowed",
+  "generatedAt": "2026-11-26T19:37:38.011Z",
+  "headlines": [
+    {
+      "section": "World",
+      "outlet": "Usnews",
+      "date": "Nov 25",
+      "url": "https://www.usnews.com/news/world/articles/2026-11-25/trump-and-nato-chief-urge-russia-to-avoid-actions-that-widen-ukraine-war",
+      "lead": "Trump and NATO Chief Urge Russia",
+      "rest": "to Avoid Actions That Widen Ukraine War",
+      "decoys": [
+        "To Take Center Stage With Fall Musical",
+        "For Amon-Ra St. Brown, Josh Allen, More",
+        "as Investors Shrug Off U.S. Tariff Plan"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Google News",
+      "date": "Nov 25",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbXB1RkhVRWE3VnNyUXlmVHcxWWxGNGRQMlZTSjZMR2JiNGZ1T0Z4N0YxMFV5X0cxLTNGbmxSckw2MXZwUTBncjJudDg0bU9zWTh4ckV2bElIT2paTnNrVFNzUHlXczA4Tk1NcmVsLWJNTlRSU0JITVk4dXVma2F4WlJsMkJSQXVHWDFqODdqeGhJVTlFWnN0bklkNGdQWl81R0NCZExOVkRmTE5hVGp3Q3lGZXZqaGwtSjJHRk12RjhlSTZiMFNwd3JhdHZKU0tyUkhfRTljdG82UQ?oc=5",
+      "lead": "What was the flash of green light",
+      "rest": "in the sky over Michigan? - WZZM13.com",
+      "decoys": [
+        "as oldest player to record a triple-double",
+        "and forest conservation easier and more efficient",
+        "to protect yourself from scams and theft"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Cnbc",
+      "date": "Nov 25",
+      "url": "https://www.cnbc.com/video/2026/11/26/very-difficult-for-chinas-chipmaking-to-advance-says-ceo.html",
+      "lead": "'Very difficult' for China's chipmaking capabilities",
+      "rest": "to advance beyond where they are now: Advisory",
+      "decoys": [
+        "for 'pivotal' brain implant trial in ALS patients",
+        "on Man United star’s future after Sporting draw",
+        "as a quiet winner in the market turmoil"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Wsj",
+      "date": "Nov 25",
+      "url": "https://www.wsj.com/finance/asian-stocks-rise-as-investors-shrug-off-u-s-tariff-plan-f8daa85b?mod=rss_worldnews",
+      "lead": "Asian Stocks Rise",
+      "rest": "as Investors Shrug Off U.S. Tariff Plan",
+      "decoys": [
+        "For Amon-Ra St. Brown, Josh Allen, More",
+        "To Take Center Stage With Fall Musical",
+        "to Avoid Actions That Widen Ukraine War"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Nbc News",
+      "date": "Nov 25",
+      "url": "https://www.nbcnews.com/science/environment/questions-lead-dust-pollution-safe-iowa-detonation-tests-rcna611366",
+      "lead": "Questions linger about lead pollution",
+      "rest": "from Iowa blast, despite officials’ assurances",
+      "decoys": [
+        "after Rams run wild - ESPN",
+        "as Fresno bars, police emphasize safety",
+        "and a new loan for Ukraine"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Patch",
+      "date": "Nov 25",
+      "url": "https://patch.com/california/cupertino/cupertino-host-silicon-valley-reads-2027-kickoff",
+      "lead": "Cupertino To Host Silicon",
+      "rest": "Valley Reads 2027 Kickoff",
+      "decoys": [
+        "of Delhi’s Summer Nights",
+        "India Is Finding Out.",
+        "Return Officially Confirmed"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Fox News",
+      "date": "Nov 25",
+      "url": "https://www.foxnews.com/world/netanyahu-declares-corruption-trial-fallen-apart-judges-question-key-charges",
+      "lead": "Netanyahu declares corruption trial has 'fallen apart'",
+      "rest": "after judges question key charges",
+      "decoys": [
+        "despite geopolitical risks: Mashreq Capital",
+        "for UK adults, POLITICO reports",
+        "to faster, smaller computer chips"
+      ]
+    }
+  ]
+}

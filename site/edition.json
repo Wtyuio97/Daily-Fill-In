@@ -1,103 +1,103 @@
 {
-  "number": 11,
-  "key": "2026-11-25",
-  "dateLabel": "Wednesday, November 25, 2026",
-  "shortDate": "Nov 25, 2026",
-  "newsKey": "2026-11-24",
-  "newsDateLabel": "Tuesday, November 24, 2026",
+  "number": 12,
+  "key": "2026-11-26",
+  "dateLabel": "Thursday, November 26, 2026",
+  "shortDate": "Nov 26, 2026",
+  "newsKey": "2026-11-25",
+  "newsDateLabel": "Wednesday, November 25, 2026",
   "seconds": 20,
   "decoySource": "borrowed",
-  "generatedAt": "2026-11-25T19:56:33.784Z",
+  "generatedAt": "2026-11-26T19:37:38.011Z",
   "headlines": [
     {
       "section": "World",
-      "outlet": "The Guardian",
-      "date": "Nov 24",
-      "url": "https://www.theguardian.com/world/2026/nov/25/australia-solomon-islands-treaty-blow-to-china-pacific-influence",
-      "lead": "Australia’s security pact with Solomon Islands a blow",
-      "rest": "to China’s influence in the Pacific",
+      "outlet": "Usnews",
+      "date": "Nov 25",
+      "url": "https://www.usnews.com/news/world/articles/2026-11-25/trump-and-nato-chief-urge-russia-to-avoid-actions-that-widen-ukraine-war",
+      "lead": "Trump and NATO Chief Urge Russia",
+      "rest": "to Avoid Actions That Widen Ukraine War",
       "decoys": [
-        "in dominant win over Kansas State",
-        "and guidelines of Coop Pank AS",
-        "as need grows ahead of holidays"
+        "To Take Center Stage With Fall Musical",
+        "For Amon-Ra St. Brown, Josh Allen, More",
+        "as Investors Shrug Off U.S. Tariff Plan"
       ]
     },
     {
       "section": "Science",
       "outlet": "Google News",
-      "date": "Nov 24",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSlNjTzlUYTRGZGlCcktaSlZuSno0Nm8wQk10bUstR3VtUEJLeGdaM3BaMDN3RHBHNGlPcW5vTWRuTzRHSUpNeEMyd0l4T3ZiNFhDdkltZ1EzbkpJdWNjTGs1YV9zS3pKODdlaUl2T0YtVjdBNE5zVU1zV2pxdm9SM3FnTmlfYlFuNUxIQkE3Rjg?oc=5",
-      "lead": "Maybe Dark Energy Isn't so Inexplicable",
-      "rest": "After All - Universe Today",
+      "date": "Nov 25",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbXB1RkhVRWE3VnNyUXlmVHcxWWxGNGRQMlZTSjZMR2JiNGZ1T0Z4N0YxMFV5X0cxLTNGbmxSckw2MXZwUTBncjJudDg0bU9zWTh4ckV2bElIT2paTnNrVFNzUHlXczA4Tk1NcmVsLWJNTlRSU0JITVk4dXVma2F4WlJsMkJSQXVHWDFqODdqeGhJVTlFWnN0bklkNGdQWl81R0NCZExOVkRmTE5hVGp3Q3lGZXZqaGwtSjJHRk12RjhlSTZiMFNwd3JhdHZKU0tyUkhfRTljdG82UQ?oc=5",
+      "lead": "What was the flash of green light",
+      "rest": "in the sky over Michigan? - WZZM13.com",
       "decoys": [
-        "After Ban From CA Freeways",
-        "in the Pacific Suffer Setback",
-        "to Watch Heading Into Wednesday"
+        "as oldest player to record a triple-double",
+        "and forest conservation easier and more efficient",
+        "to protect yourself from scams and theft"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Cnbc",
+      "date": "Nov 25",
+      "url": "https://www.cnbc.com/video/2026/11/26/very-difficult-for-chinas-chipmaking-to-advance-says-ceo.html",
+      "lead": "'Very difficult' for China's chipmaking capabilities",
+      "rest": "to advance beyond where they are now: Advisory",
+      "decoys": [
+        "for 'pivotal' brain implant trial in ALS patients",
+        "on Man United star’s future after Sporting draw",
+        "as a quiet winner in the market turmoil"
       ]
     },
     {
       "section": "World",
       "outlet": "Wsj",
-      "date": "Nov 24",
-      "url": "https://www.wsj.com/world/asia/chinas-military-ambitions-in-the-pacific-suffer-setback-ef5a2d30?mod=rss_worldnews",
-      "lead": "China’s Military Ambitions",
-      "rest": "in the Pacific Suffer Setback",
+      "date": "Nov 25",
+      "url": "https://www.wsj.com/finance/asian-stocks-rise-as-investors-shrug-off-u-s-tariff-plan-f8daa85b?mod=rss_worldnews",
+      "lead": "Asian Stocks Rise",
+      "rest": "as Investors Shrug Off U.S. Tariff Plan",
       "decoys": [
-        "in a Blow to China",
-        "to Watch Heading Into Wednesday",
-        "After All - Universe Today"
+        "For Amon-Ra St. Brown, Josh Allen, More",
+        "To Take Center Stage With Fall Musical",
+        "to Avoid Actions That Widen Ukraine War"
       ]
     },
     {
       "section": "Science",
       "outlet": "Nbc News",
-      "date": "Nov 24",
-      "url": "https://www.nbcnews.com/video/lab-says-humanoid-robot-uses-living-human-neurons-to-help-think-274135621796",
-      "lead": "Lab says humanoid robot uses",
-      "rest": "living human neurons to help think",
+      "date": "Nov 25",
+      "url": "https://www.nbcnews.com/science/environment/questions-lead-dust-pollution-safe-iowa-detonation-tests-rcna611366",
+      "lead": "Questions linger about lead pollution",
+      "rest": "from Iowa blast, despite officials’ assurances",
       "decoys": [
-        "warning children's lives are at risk",
-        "giving England an extra dimension",
-        "ailing primary care system"
+        "after Rams run wild - ESPN",
+        "as Fresno bars, police emphasize safety",
+        "and a new loan for Ukraine"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Patch",
+      "date": "Nov 25",
+      "url": "https://patch.com/california/cupertino/cupertino-host-silicon-valley-reads-2027-kickoff",
+      "lead": "Cupertino To Host Silicon",
+      "rest": "Valley Reads 2027 Kickoff",
+      "decoys": [
+        "of Delhi’s Summer Nights",
+        "India Is Finding Out.",
+        "Return Officially Confirmed"
       ]
     },
     {
       "section": "World",
       "outlet": "Fox News",
-      "date": "Nov 24",
-      "url": "https://www.foxnews.com/world/trump-administration-weighs-targeting-irans-top-regime-leaders-bid-end-war-report",
-      "lead": "Trump administration weighs targeting Iran's top regime leaders",
-      "rest": "in bid to end war: report",
+      "date": "Nov 25",
+      "url": "https://www.foxnews.com/world/netanyahu-declares-corruption-trial-fallen-apart-judges-question-key-charges",
+      "lead": "Netanyahu declares corruption trial has 'fallen apart'",
+      "rest": "after judges question key charges",
       "decoys": [
-        "to China’s influence in the Pacific",
-        "to support Iowa ammunition plant response",
-        "in Players Era 16 first round"
-      ]
-    },
-    {
-      "section": "Science",
-      "outlet": "Digg",
-      "date": "Nov 24",
-      "url": "https://digg.com/ai/rwz7gy1s",
-      "lead": "OpenAI preprint claims square matrix",
-      "rest": "multiplication’s exponent is exactly 2.25",
-      "decoys": [
-        "confidence 82 vs 82 expected",
-        "prisoners remain behind Israeli bars",
-        "It can’t replace the village"
-      ]
-    },
-    {
-      "section": "World",
-      "outlet": "Time",
-      "date": "Nov 24",
-      "url": "https://time.com/article/2026/11/25/focker-in-law-review-ariana-grande/",
-      "lead": "Ariana Grande Is the Saving Grace",
-      "rest": "of the Woefully Unfunny Focker In-Law",
-      "decoys": [
-        "say Nvidia’s Vera hardware has landed",
-        "Masterpiece Is An S-Tier Fantasy Series",
-        "Issuer Rating to AS Coop Pank"
+        "despite geopolitical risks: Mashreq Capital",
+        "for UK adults, POLITICO reports",
+        "to faster, smaller computer chips"
       ]
     }
   ]
