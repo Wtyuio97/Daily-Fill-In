@@ -1,0 +1,104 @@
+{
+  "number": 13,
+  "key": "2026-11-27",
+  "dateLabel": "Friday, November 27, 2026",
+  "shortDate": "Nov 27, 2026",
+  "newsKey": "2026-11-26",
+  "newsDateLabel": "Thursday, November 26, 2026",
+  "seconds": 20,
+  "decoySource": "borrowed",
+  "generatedAt": "2026-11-27T19:28:27.137Z",
+  "headlines": [
+    {
+      "section": "World",
+      "outlet": "Usnews",
+      "date": "Nov 26",
+      "url": "https://www.usnews.com/news/world/articles/2026-11-26/australia-sanctions-two-people-over-antisemitic-attacks-that-it-blames-on-iran",
+      "lead": "Australia Sanctions Two People",
+      "rest": "Over Antisemitic Attacks That It Blames on Iran",
+      "decoys": [
+        "And 3 Stocks To Watch Heading Into Friday",
+        "in a Star System Used to Calibrate the JWST",
+        "After Netflix Posts Steamy Promo on Thanksgiving"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Google News",
+      "date": "Nov 26",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNampwYTZjdEU1VXZZUjJNZnNYYXNIWE1NanFFMVFkYVBPc1R5cXl3NGQ1bDBWeXRuQWh0WkJTR0Nmem54SEtZazZvYTNuVEtkb1ViUUhUTk1IcjhlSTh4anV6Y3dybDU1THJfZS1TRmI0MV9ENVNVeXpHaERRXzJBY0lfcmdCeWN5STRRZzFSQnBPdWdOSlpFWWk4WQ?oc=5",
+      "lead": "Scientists Cracked Open a Mars Meteorite",
+      "rest": "And Found a Huge Surprise - ScienceAlert",
+      "decoys": [
+        "at the 2026 Guangzhou International Automobile Exhibition",
+        "on Officiating Controversy in Chiefs-Bills Thanksgiving Thriller",
+        "After Netflix Posts Steamy Promo on Thanksgiving"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "The Guardian",
+      "date": "Nov 26",
+      "url": "https://www.theguardian.com/news/audio/2026/nov/27/why-arent-we-having-more-sex-podcast",
+      "lead": "Why aren’t we having",
+      "rest": "more sex? – podcast",
+      "decoys": [
+        "one hub, zero installs",
+        "beats Baylor, @MarchMadnessMBB reports",
+        "breaks a high press?"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Wsj",
+      "date": "Nov 26",
+      "url": "https://www.wsj.com/tech/ai/the-ai-boom-looks-alive-and-well-in-asia-59841697?mod=rss_worldnews",
+      "lead": "The AI Boom Looks Alive",
+      "rest": "and Well in Asia",
+      "decoys": [
+        "To Track Hidden Ships",
+        "to a Deployed Marine",
+        "By Coming Out as Gay"
+      ]
+    },
+    {
+      "section": "Science",
+      "outlet": "Business Insider",
+      "date": "Nov 26",
+      "url": "https://www.businessinsider.com/stanford-physicist-openai-astra-quantum-gravity-smart-people-say-2026-11",
+      "lead": "What smart people are saying",
+      "rest": "about an AI-assisted theory of quantum gravity",
+      "decoys": [
+        "at least 10,000 jobs in AI push",
+        "on Thanksgiving as storm sweeps East Coast",
+        "to consider quitting OPEC earlier this year"
+      ]
+    },
+    {
+      "section": "Health",
+      "outlet": "Cnbc",
+      "date": "Nov 26",
+      "url": "https://www.cnbc.com/video/2026/11/27/good-chance-the-10-year-us-treasury-yield-will-hit-5point5-percent-in-2027.html",
+      "lead": "'Good chance' of 10-year UST yield",
+      "rest": "at 5.5 % in 2027: CreditSights",
+      "decoys": [
+        "and what broke in real wallets",
+        "to try to divide and conquer",
+        "over year in October, CNBC reports"
+      ]
+    },
+    {
+      "section": "World",
+      "outlet": "Fox News",
+      "date": "Nov 26",
+      "url": "https://www.foxnews.com/world/iran-accuses-zelenskyy-false-flag-kuwait-drone-strike-op-get-trumps-attention",
+      "lead": "Iran accuses Zelenskyy of 'false flag' Kuwait",
+      "rest": "drone strike op to get Trump's attention",
+      "decoys": [
+        "like being pals with Hitler, says Zelensky",
+        "dependability is the key to customer loyalty",
+        "may be most vulnerable to screen time"
+      ]
+    }
+  ]
+}

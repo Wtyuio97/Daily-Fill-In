@@ -1,103 +1,103 @@
 {
-  "number": 12,
-  "key": "2026-11-26",
-  "dateLabel": "Thursday, November 26, 2026",
-  "shortDate": "Nov 26, 2026",
-  "newsKey": "2026-11-25",
-  "newsDateLabel": "Wednesday, November 25, 2026",
+  "number": 13,
+  "key": "2026-11-27",
+  "dateLabel": "Friday, November 27, 2026",
+  "shortDate": "Nov 27, 2026",
+  "newsKey": "2026-11-26",
+  "newsDateLabel": "Thursday, November 26, 2026",
   "seconds": 20,
   "decoySource": "borrowed",
-  "generatedAt": "2026-11-26T19:37:38.011Z",
+  "generatedAt": "2026-11-27T19:28:27.137Z",
   "headlines": [
     {
       "section": "World",
       "outlet": "Usnews",
-      "date": "Nov 25",
-      "url": "https://www.usnews.com/news/world/articles/2026-11-25/trump-and-nato-chief-urge-russia-to-avoid-actions-that-widen-ukraine-war",
-      "lead": "Trump and NATO Chief Urge Russia",
-      "rest": "to Avoid Actions That Widen Ukraine War",
+      "date": "Nov 26",
+      "url": "https://www.usnews.com/news/world/articles/2026-11-26/australia-sanctions-two-people-over-antisemitic-attacks-that-it-blames-on-iran",
+      "lead": "Australia Sanctions Two People",
+      "rest": "Over Antisemitic Attacks That It Blames on Iran",
       "decoys": [
-        "To Take Center Stage With Fall Musical",
-        "For Amon-Ra St. Brown, Josh Allen, More",
-        "as Investors Shrug Off U.S. Tariff Plan"
+        "And 3 Stocks To Watch Heading Into Friday",
+        "in a Star System Used to Calibrate the JWST",
+        "After Netflix Posts Steamy Promo on Thanksgiving"
       ]
     },
     {
       "section": "Science",
       "outlet": "Google News",
-      "date": "Nov 25",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbXB1RkhVRWE3VnNyUXlmVHcxWWxGNGRQMlZTSjZMR2JiNGZ1T0Z4N0YxMFV5X0cxLTNGbmxSckw2MXZwUTBncjJudDg0bU9zWTh4ckV2bElIT2paTnNrVFNzUHlXczA4Tk1NcmVsLWJNTlRSU0JITVk4dXVma2F4WlJsMkJSQXVHWDFqODdqeGhJVTlFWnN0bklkNGdQWl81R0NCZExOVkRmTE5hVGp3Q3lGZXZqaGwtSjJHRk12RjhlSTZiMFNwd3JhdHZKU0tyUkhfRTljdG82UQ?oc=5",
-      "lead": "What was the flash of green light",
-      "rest": "in the sky over Michigan? - WZZM13.com",
+      "date": "Nov 26",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNampwYTZjdEU1VXZZUjJNZnNYYXNIWE1NanFFMVFkYVBPc1R5cXl3NGQ1bDBWeXRuQWh0WkJTR0Nmem54SEtZazZvYTNuVEtkb1ViUUhUTk1IcjhlSTh4anV6Y3dybDU1THJfZS1TRmI0MV9ENVNVeXpHaERRXzJBY0lfcmdCeWN5STRRZzFSQnBPdWdOSlpFWWk4WQ?oc=5",
+      "lead": "Scientists Cracked Open a Mars Meteorite",
+      "rest": "And Found a Huge Surprise - ScienceAlert",
       "decoys": [
-        "as oldest player to record a triple-double",
-        "and forest conservation easier and more efficient",
-        "to protect yourself from scams and theft"
+        "at the 2026 Guangzhou International Automobile Exhibition",
+        "on Officiating Controversy in Chiefs-Bills Thanksgiving Thriller",
+        "After Netflix Posts Steamy Promo on Thanksgiving"
       ]
     },
     {
       "section": "Health",
-      "outlet": "Cnbc",
-      "date": "Nov 25",
-      "url": "https://www.cnbc.com/video/2026/11/26/very-difficult-for-chinas-chipmaking-to-advance-says-ceo.html",
-      "lead": "'Very difficult' for China's chipmaking capabilities",
-      "rest": "to advance beyond where they are now: Advisory",
+      "outlet": "The Guardian",
+      "date": "Nov 26",
+      "url": "https://www.theguardian.com/news/audio/2026/nov/27/why-arent-we-having-more-sex-podcast",
+      "lead": "Why aren’t we having",
+      "rest": "more sex? – podcast",
       "decoys": [
-        "for 'pivotal' brain implant trial in ALS patients",
-        "on Man United star’s future after Sporting draw",
-        "as a quiet winner in the market turmoil"
+        "one hub, zero installs",
+        "beats Baylor, @MarchMadnessMBB reports",
+        "breaks a high press?"
       ]
     },
     {
       "section": "World",
       "outlet": "Wsj",
-      "date": "Nov 25",
-      "url": "https://www.wsj.com/finance/asian-stocks-rise-as-investors-shrug-off-u-s-tariff-plan-f8daa85b?mod=rss_worldnews",
-      "lead": "Asian Stocks Rise",
-      "rest": "as Investors Shrug Off U.S. Tariff Plan",
+      "date": "Nov 26",
+      "url": "https://www.wsj.com/tech/ai/the-ai-boom-looks-alive-and-well-in-asia-59841697?mod=rss_worldnews",
+      "lead": "The AI Boom Looks Alive",
+      "rest": "and Well in Asia",
       "decoys": [
-        "For Amon-Ra St. Brown, Josh Allen, More",
-        "To Take Center Stage With Fall Musical",
-        "to Avoid Actions That Widen Ukraine War"
+        "To Track Hidden Ships",
+        "to a Deployed Marine",
+        "By Coming Out as Gay"
       ]
     },
     {
       "section": "Science",
-      "outlet": "Nbc News",
-      "date": "Nov 25",
-      "url": "https://www.nbcnews.com/science/environment/questions-lead-dust-pollution-safe-iowa-detonation-tests-rcna611366",
-      "lead": "Questions linger about lead pollution",
-      "rest": "from Iowa blast, despite officials’ assurances",
+      "outlet": "Business Insider",
+      "date": "Nov 26",
+      "url": "https://www.businessinsider.com/stanford-physicist-openai-astra-quantum-gravity-smart-people-say-2026-11",
+      "lead": "What smart people are saying",
+      "rest": "about an AI-assisted theory of quantum gravity",
       "decoys": [
-        "after Rams run wild - ESPN",
-        "as Fresno bars, police emphasize safety",
-        "and a new loan for Ukraine"
+        "at least 10,000 jobs in AI push",
+        "on Thanksgiving as storm sweeps East Coast",
+        "to consider quitting OPEC earlier this year"
       ]
     },
     {
       "section": "Health",
-      "outlet": "Patch",
-      "date": "Nov 25",
-      "url": "https://patch.com/california/cupertino/cupertino-host-silicon-valley-reads-2027-kickoff",
-      "lead": "Cupertino To Host Silicon",
-      "rest": "Valley Reads 2027 Kickoff",
+      "outlet": "Cnbc",
+      "date": "Nov 26",
+      "url": "https://www.cnbc.com/video/2026/11/27/good-chance-the-10-year-us-treasury-yield-will-hit-5point5-percent-in-2027.html",
+      "lead": "'Good chance' of 10-year UST yield",
+      "rest": "at 5.5 % in 2027: CreditSights",
       "decoys": [
-        "of Delhi’s Summer Nights",
-        "India Is Finding Out.",
-        "Return Officially Confirmed"
+        "and what broke in real wallets",
+        "to try to divide and conquer",
+        "over year in October, CNBC reports"
       ]
     },
     {
       "section": "World",
       "outlet": "Fox News",
-      "date": "Nov 25",
-      "url": "https://www.foxnews.com/world/netanyahu-declares-corruption-trial-fallen-apart-judges-question-key-charges",
-      "lead": "Netanyahu declares corruption trial has 'fallen apart'",
-      "rest": "after judges question key charges",
+      "date": "Nov 26",
+      "url": "https://www.foxnews.com/world/iran-accuses-zelenskyy-false-flag-kuwait-drone-strike-op-get-trumps-attention",
+      "lead": "Iran accuses Zelenskyy of 'false flag' Kuwait",
+      "rest": "drone strike op to get Trump's attention",
       "decoys": [
-        "despite geopolitical risks: Mashreq Capital",
-        "for UK adults, POLITICO reports",
-        "to faster, smaller computer chips"
+        "like being pals with Hitler, says Zelensky",
+        "dependability is the key to customer loyalty",
+        "may be most vulnerable to screen time"
       ]
     }
   ]
